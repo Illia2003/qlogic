@@ -1,0 +1,27 @@
+.btn {
+  font-family: "Manrope", sans-serif;
+  border: none;
+
+  &.btn--accent--big {
+    background-color: $accent-color;
+
+    font-size: 21px;
+    line-height: 130%;
+    font-weight: 600;
+    letter-spacing: -0.63px;
+
+    width: 257px;
+    height: 257px;
+
+    padding: 0px 64px;
+
+    border-radius: 100%;
+    text-align: left;
+
+    color: $heading-color;
+
+    span {
+      margin: 0px 8px;
+    }
+  }
+}

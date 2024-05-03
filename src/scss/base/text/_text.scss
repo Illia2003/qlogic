@@ -1,0 +1,19 @@
+.heading-1 {
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 100px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 85%;
+  letter-spacing: -5px;
+
+  display: inline-flex;
+  flex-direction: column;
+
+  span {
+    display: inline-block;
+
+    &:nth-of-type(2n) {
+      padding-left: 146px;
+    }
+  }
+}

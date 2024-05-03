@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  min-width: 360px;
+  overflow-x: hidden;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 133%;
+  letter-spacing: -0.9px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 89vw;
+  padding: 0px 24px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+/* STYLES FOR TEXT */
+@import "./text/text";
+
+/* STYLES FOR WRAPPERS */
+@import "./wrapper/wrapper";
+
+/* STYLES FOR BUTTONS */
+@import "./buttons/buttons";

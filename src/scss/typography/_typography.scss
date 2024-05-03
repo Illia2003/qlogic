@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/Euclid Circular A Regular.ttf") format("truetype"),
+    url("../fonts/Euclid Circular A Regular.eot") format("embedded-opentype"),
+    url("../fonts/Euclid Circular A Regular.otf") format("opentype"),
+    url("../fonts/Euclid Circular A Regular.woff") format("woff"),
+    url("../fonts/Euclid Circular A Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.ttf") format("truetype"),
+    url("../fonts/Manrope-Medium.eot") format("embedded-opentype"),
+    url("../fonts/Manrope-Medium.otf") format("opentype"),
+    url("../fonts/Manrope-Medium.woff") format("woff"),
+    url("../fonts/Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.ttf") format("truetype"),
+    url("../fonts/Manrope-SemiBold.eot") format("embedded-opentype"),
+    url("../fonts/Manrope-SemiBold.otf") format("opentype"),
+    url("../fonts/Manrope-SemiBold.woff") format("woff"),
+    url("../fonts/Manrope-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.ttf") format("truetype"),
+    url("../fonts/Manrope-Bold.eot") format("embedded-opentype"),
+    url("../fonts/Manrope-Bold.otf") format("opentype"),
+    url("../fonts/Manrope-Bold.woff") format("woff"),
+    url("../fonts/Manrope-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
