@@ -30,6 +30,13 @@ body {
   height: 100%;
 }
 
+svg {
+  path {
+    fill: inherit;
+    stroke: inherit;
+  }
+}
+
 /* STYLES FOR TEXT */
 @import "./text/text";
 

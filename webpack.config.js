@@ -14,6 +14,28 @@ module.exports = {
         test: /\.(woff|woff2|eot|otf|ttf|svg)?$/,
         type: "asset/resource",
       },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "videos/[name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg)/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "images/[name].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [

@@ -1,3 +1,5 @@
-import "../scss/main.scss";
+import "../videos/videobg.mp4";
 
-console.log("It works!");
+import "../images/logo--white.png";
+
+import "../scss/main.scss";
