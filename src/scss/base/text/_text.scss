@@ -2,25 +2,94 @@
   .text-blue-color {
     color: $theme-color;
   }
+
+  .text-accent-color {
+    color: $accent-color;
+  }
 }
 
 .heading-1 {
   margin: 0px;
   font-family: "Euclid Circular A", sans-serif;
-  font-size: 100px;
+
+  font-size: calc(1em + 4.27vw);
   font-weight: normal;
   font-style: normal;
   line-height: 85%;
-  letter-spacing: -5px;
+  letter-spacing: -0.05em;
 
   display: inline-flex;
   flex-direction: column;
+
+  text-transform: uppercase;
 
   span {
     display: inline-block;
 
     &:nth-of-type(2n) {
-      padding-left: 146px;
+      padding-left: 1.46em;
+    }
+  }
+}
+
+.heading-2 {
+  margin: 0px;
+  font-family: "Euclid Circular A", sans-serif;
+
+  font-size: calc(1em + 3.9vw);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+
+  display: inline-flex;
+  flex-direction: column;
+
+  text-transform: uppercase;
+  color: $heading-color;
+}
+
+.heading-6 {
+  margin: 0px;
+  font-family: "Euclid Circular A", sans-serif;
+
+  font-size: calc(1em + 0.3125vw);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+
+  text-transform: uppercase;
+}
+
+.subtitle {
+  display: inline-block;
+  padding: 14px 18px;
+  border: 1px solid $border-color;
+
+  border-radius: 250px;
+
+  margin: 0px;
+  margin-top: 11px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: $border-color;
+
+  span.subtitle__text {
+    color: $theme-color;
+  }
+
+  &.subtitle--white {
+    color: #fff;
+    border-color: #fff;
+
+    span.subtitle__text {
+      color: #fff;
     }
   }
 }
@@ -32,5 +101,28 @@
   font-weight: 500;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.03em;
+}
+
+.text--regular {
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+  font-size: calc(1em + 0.1042vw);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: $text-color;
+}
+
+.text--big {
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+  font-size: calc(1em + 0.3125vw);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+
+  color: $heading-color;
 }

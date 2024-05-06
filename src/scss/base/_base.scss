@@ -26,14 +26,56 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 .wrapper {
   height: 100%;
 }
 
-svg {
-  path {
-    fill: inherit;
-    stroke: inherit;
+section {
+  &.section--rounded {
+    border-radius: 56px;
+    position: relative;
+    z-index: 100;
+
+    & + & {
+      z-index: 90;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  &.section--white {
+    background-color: #fff;
+  }
+
+  &.section--blue {
+    background-color: $theme-color;
+
+    .section__title {
+      color: #fff;
+    }
+
+    .text--regular {
+      color: #fff;
+    }
+  }
+
+  & + section {
+    margin-top: -48px;
+  }
+}
+
+body :not(.intial-colors) {
+  > svg {
+    path {
+      fill: inherit;
+      stroke: inherit;
+    }
   }
 }
 
