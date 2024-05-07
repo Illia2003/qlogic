@@ -1,0 +1,46 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+
+  .tabs__items {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 1 48.895%;
+  }
+
+  .tabs__content {
+    flex: 0 1 51.105%;
+  }
+
+  .tabs__tab {
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.6);
+    color: rgba($color: #fff, $alpha: 0.6);
+
+    padding: 20px 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    min-height: 108px;
+
+    .tab__index {
+      margin-right: 16px;
+
+      font-family: "Euclid Circular A", sans-serif;
+
+      font-size: calc(13px + 0.15625vw);
+      font-weight: normal;
+      font-style: normal;
+      line-height: 140%;
+      letter-spacing: -0.05em;
+
+      text-transform: uppercase;
+    }
+
+    .tab__name {
+      max-width: 403px;
+    }
+  }
+}

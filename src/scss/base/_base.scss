@@ -21,14 +21,14 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  max-width: 89vw;
-  padding: 0px 24px;
+  max-width: 89.583vw;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 100%;
+    padding: 0px 24px;
   }
 }
 
@@ -65,8 +65,24 @@ section {
     }
   }
 
+  &.section--grey {
+    background-color: $heading-color;
+
+    .section__title {
+      color: #fff;
+    }
+
+    .text--regular {
+      color: #fff;
+    }
+  }
+
   & + section {
-    margin-top: -48px;
+    margin-top: -56px;
+  }
+
+  &.section--rounded + &.section--no-rounded {
+    padding-top: 56px;
   }
 }
 
@@ -87,3 +103,6 @@ body :not(.intial-colors) {
 
 /* STYLES FOR BUTTONS */
 @import "./buttons/buttons";
+
+/* STYLES FOR TABS */
+@import "./tabs/tabs";

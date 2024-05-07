@@ -5,6 +5,9 @@
 
   .about-us__title {
     .heading-2 {
+      display: inline-flex;
+      flex-direction: column;
+
       span {
         display: inline-block;
 

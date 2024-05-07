@@ -8,7 +8,7 @@
       position: absolute;
       border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
 
-      top: 126px;
+      top: calc(4.434vw + 35px);
       left: 0px;
       right: 0px;
     }
@@ -21,16 +21,16 @@
       border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
 
       &.horizontal-line--first {
-        left: 6.4%;
+        left: 4.765625%;
       }
 
       &.horizontal-line--second {
-        top: 126px;
-        left: 43.5%;
+        top: calc(4.434vw + 35px);
+        left: 43.2201786653%;
       }
 
       &.horizontal-line--third {
-        right: 6.4%;
+        right: 4.765625%;
       }
     }
   }
@@ -62,20 +62,27 @@
 
   .hero__header {
     flex: 0 0 auto;
-    padding: 32px;
+    padding: 1.67vw;
+
+    align-items: stretch;
 
     .header__logo {
       display: flex;
       align-items: center;
 
       .logo__image {
-        padding-right: 18px;
+        padding-right: 0.9375vw;
         border-right: 1px solid rgba($color: #fff, $alpha: 0.4);
+
+        img {
+          width: 7.29vw;
+          height: auto;
+        }
       }
 
       .logo__tagline {
         max-width: 242px;
-        padding-left: 18px;
+        padding-left: 0.9375vw;
       }
     }
 
@@ -83,15 +90,15 @@
       a {
         margin: 0px;
         font-family: "Manrope", sans-serif;
-        font-size: 16px;
+        font-size: calc(14px + 0.104vw);
         font-weight: 600;
         font-style: normal;
         line-height: normal;
-        letter-spacing: -0.32px;
+        letter-spacing: -0.02em;
         text-decoration: none;
 
         display: block;
-        padding: 12px 16px;
+        padding: 0.75em 0.83vw;
 
         border-radius: 250px;
 
@@ -109,7 +116,7 @@
       .navigation__menu {
         list-style: none;
         background-color: rgba($color: #fff, $alpha: 0.12);
-        padding: 8px;
+        padding: 0.417vw;
         gap: 8px;
 
         border-radius: 50px;
@@ -205,6 +212,11 @@
     .hero__header {
       padding-left: 0;
       padding-right: 0;
+
+      .logo__tagline {
+        max-width: 242px;
+        padding-left: 0.9375vw;
+      }
     }
 
     .hero__lines {
@@ -214,7 +226,6 @@
         }
 
         &.horizontal-line--second {
-          top: 126px;
           left: 42.7%;
         }
 
@@ -241,7 +252,6 @@
     .hero__lines {
       .horizontal-line {
         &.horizontal-line--second {
-          top: 126px;
           left: 50%;
         }
       }

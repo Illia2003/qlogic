@@ -1,6 +1,6 @@
 .btn {
   font-family: "Manrope", sans-serif;
-  font-size: 16px;
+  font-size: calc(14px + 0.104vw);
   line-height: 150%;
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -11,15 +11,18 @@
   &.btn--accent--big {
     background-color: $accent-color;
 
-    font-size: 21px;
+    font-size: calc(1em + 0.15625vw);
     line-height: 130%;
     font-weight: 600;
     letter-spacing: -0.03em;
 
-    width: 257px;
-    height: 257px;
+    width: 13.39vw;
+    height: 13.39vw;
 
-    padding: 0px 64px;
+    min-width: 200px;
+    min-height: 200px;
+
+    padding: 0px 23.4%;
 
     border-radius: 100%;
     text-align: left;
@@ -57,7 +60,7 @@
     transition: all 0.3s linear;
 
     .btn__text {
-      padding: 0px 21px;
+      padding: 0px 1.09375vw;
     }
 
     .btn__icon {
@@ -65,8 +68,11 @@
       justify-content: center;
       align-items: center;
 
-      width: 42px;
-      height: 42px;
+      width: 2.1875vw;
+      height: 2.1875vw;
+
+      min-width: 32px;
+      min-height: 32px;
 
       background-color: #fff;
       border-radius: 100px;
@@ -95,7 +101,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 8px 12px;
+    padding: 8px 0.75em;
 
     border-radius: 50px;
 
@@ -104,7 +110,7 @@
     transition: all 0.3s linear;
 
     .btn__text {
-      padding: 0px 21px;
+      padding: 0px 1.09375vw;
     }
 
     .btn__icon {
@@ -138,7 +144,7 @@
   }
 
   &.btn--icon {
-    padding: 8px 24px;
+    padding: 0.42vw 1.25vw;
     background-color: #fff;
     border-radius: 100px;
 
@@ -163,6 +169,14 @@
       svg {
         fill: #fff;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1719px) {
+  .btn {
+    &.btn--accent--big {
+      padding: 0px 15%;
     }
   }
 }
