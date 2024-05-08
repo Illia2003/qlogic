@@ -1,6 +1,6 @@
 .tabs-section {
   .tabs-section__wrapper {
-    padding: 133px 0px 144px;
+    padding: calc(66.5 * (100vw / 960)) 0px calc(72 * (100vw / 960));
   }
 
   .tabs-section__top {

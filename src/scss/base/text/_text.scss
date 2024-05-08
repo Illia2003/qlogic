@@ -12,7 +12,7 @@
   margin: 0px;
   font-family: "Euclid Circular A", sans-serif;
 
-  font-size: calc(1em + 4.27vw);
+  font-size: calc(50 * (100vw / 960));
   font-weight: normal;
   font-style: normal;
   line-height: 85%;
@@ -27,7 +27,7 @@
     display: inline-block;
 
     &:nth-of-type(2n) {
-      padding-left: 1.46em;
+      padding-left: calc(73 * (100vw / 960));
     }
   }
 }
@@ -36,7 +36,7 @@
   margin: 0px;
   font-family: "Euclid Circular A", sans-serif;
 
-  font-size: calc(1em + 3.9vw);
+  font-size: calc(46 * (100vw / 960));
   font-weight: normal;
   font-style: normal;
   line-height: 100%;
@@ -50,7 +50,7 @@
   margin: 0px;
   font-family: "Euclid Circular A", sans-serif;
 
-  font-size: calc(1em + 0.3125vw);
+  font-size: calc(12 * (100vw / 960));
   font-weight: normal;
   font-style: normal;
   line-height: 140%;
@@ -61,16 +61,16 @@
 
 .subtitle {
   display: inline-block;
-  padding: 14px 18px;
+  padding: calc(7 * (100vw / 960)) calc(9 * (100vw / 960));
   border: 1px solid $border-color;
 
   border-radius: 250px;
 
   margin: 0px;
-  margin-top: 11px;
+  margin-top: calc(5.5 * (100vw / 960));
 
   font-family: "Manrope", sans-serif;
-  font-size: calc(14px + 0.2083vw);
+  font-size: calc(9 * (100vw / 960));
   font-weight: 600;
   font-style: normal;
   line-height: 130%;
@@ -94,7 +94,7 @@
 .text--small {
   margin: 0px;
   font-family: "Manrope", sans-serif;
-  font-size: calc(13px + 0.104vw);
+  font-size: calc(7.5 * (100vw / 960));
   font-weight: 500;
   font-style: normal;
   line-height: normal;
@@ -104,7 +104,7 @@
 .text--regular {
   margin: 0px;
   font-family: "Manrope", sans-serif;
-  font-size: calc(1em + 0.1042vw);
+  font-size: calc(10 * (100vw / 960));
   font-weight: 500;
   font-style: normal;
   line-height: 140%;
@@ -115,7 +115,7 @@
 .text--big {
   margin: 0px;
   font-family: "Manrope", sans-serif;
-  font-size: calc(1em + 0.3125vw);
+  font-size: calc(12 * (100vw / 960));
   font-weight: 600;
   font-style: normal;
   line-height: 140%;

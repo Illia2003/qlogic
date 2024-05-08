@@ -1,6 +1,6 @@
 .btn {
   font-family: "Manrope", sans-serif;
-  font-size: calc(14px + 0.104vw);
+  font-size: calc(8 * (100vw / 960));
   line-height: 150%;
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -9,20 +9,19 @@
   cursor: pointer;
 
   &.btn--accent--big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: $accent-color;
 
-    font-size: calc(1em + 0.15625vw);
+    font-size: calc(10.5 * (100vw / 960));
     line-height: 130%;
     font-weight: 600;
     letter-spacing: -0.03em;
 
-    width: 13.39vw;
-    height: 13.39vw;
-
-    min-width: 200px;
-    min-height: 200px;
-
-    padding: 0px 23.4%;
+    width: calc(128.5 * (100vw / 960));
+    height: calc(128.5 * (100vw / 960));
 
     border-radius: 100%;
     text-align: left;
@@ -30,13 +29,17 @@
     color: $heading-color;
     transition: all 0.3s linear;
 
-    span {
-      margin: 0px 8px;
+    .btn__content {
+      width: calc(68 * (100vw / 960));
     }
 
     svg {
+      margin: 0px calc(4 * (100vw / 960));
       stroke: $heading-color;
       transition: all 0.3s linear;
+
+      width: calc(7.5 * (100vw / 960));
+      height: calc(7 * (100vw / 960));
     }
 
     &:hover,
@@ -51,7 +54,7 @@
   }
 
   &.btn--main {
-    padding: 8px;
+    padding: calc(4 * (100vw / 960));
 
     border-radius: 50px;
 
@@ -60,7 +63,7 @@
     transition: all 0.3s linear;
 
     .btn__text {
-      padding: 0px 1.09375vw;
+      padding: 0px calc(10.5 * (100vw / 960));
     }
 
     .btn__icon {
@@ -68,19 +71,16 @@
       justify-content: center;
       align-items: center;
 
-      width: 2.1875vw;
-      height: 2.1875vw;
-
-      min-width: 32px;
-      min-height: 32px;
+      width: calc(21 * (100vw / 960));
+      height: calc(21 * (100vw / 960));
 
       background-color: #fff;
       border-radius: 100px;
 
       svg {
         stroke: $theme-color;
-        width: 16px;
-        height: 12px;
+        width: calc(8 * (100vw / 960));
+        height: calc(6 * (100vw / 960));
         transition: all 0.3s linear;
       }
     }
@@ -101,7 +101,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 8px 0.75em;
+    padding: calc(4 * (100vw / 960)) calc(6 * (100vw / 960));
 
     border-radius: 50px;
 
@@ -110,7 +110,7 @@
     transition: all 0.3s linear;
 
     .btn__text {
-      padding: 0px 1.09375vw;
+      padding: 0px calc(10.5 * (100vw / 960));
     }
 
     .btn__icon {
@@ -118,16 +118,16 @@
       justify-content: center;
       align-items: center;
 
-      width: 42px;
-      height: 42px;
+      width: calc(21 * (100vw / 960));
+      height: calc(21 * (100vw / 960));
 
       background-color: #fff;
       border-radius: 100px;
 
       svg {
         stroke: $theme-color;
-        width: 16px;
-        height: 12px;
+        width: calc(8 * (100vw / 960));
+        height: calc(6 * (100vw / 960));
         transition: all 0.3s linear;
       }
     }
@@ -144,7 +144,7 @@
   }
 
   &.btn--icon {
-    padding: 0.42vw 1.25vw;
+    padding: calc(4 * (100vw / 960)) calc(12 * (100vw / 960));
     background-color: #fff;
     border-radius: 100px;
 
@@ -155,7 +155,7 @@
     transition: all 0.3s linear;
 
     svg {
-      height: 21px;
+      height: calc(10.5 * (100vw / 960));
       width: auto;
 
       fill: $theme-color;
@@ -169,14 +169,6 @@
       svg {
         fill: #fff;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 1719px) {
-  .btn {
-    &.btn--accent--big {
-      padding: 0px 15%;
     }
   }
 }

@@ -7,27 +7,27 @@
     display: flex;
     flex-direction: column;
 
-    flex: 0 1 48.895%;
+    width: calc(420.5 * (100vw / 960));
   }
 
   .tabs__content {
-    flex: 0 1 51.105%;
+    flex: 0 1 calc(438.5 * (100vw / 960));
 
     border: 1px solid rgba($color: #fff, $alpha: 0.6);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-top-right-radius: calc(12.5 * (100vw / 960));
+    border-bottom-right-radius: calc(12.5 * (100vw / 960));
   }
 
   .tabs__tab {
     border-top: 1px solid rgba($color: #fff, $alpha: 0.6);
     color: rgba($color: #fff, $alpha: 0.6);
 
-    padding: 20px 24px;
+    padding: calc(10 * (100vw / 960)) calc(12 * (100vw / 960));
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
-    min-height: 108px;
+    min-height: calc(54 * (100vw / 960));
 
     cursor: pointer;
     transition: all 0.3s linear;
@@ -44,7 +44,7 @@
       &:hover,
       &:focus,
       &.active {
-        border-top-left-radius: 25px;
+        border-top-left-radius: calc(12.5 * (100vw / 960));
       }
     }
 
@@ -55,7 +55,7 @@
       &:focus,
       &.active {
         border-color: $theme-color;
-        border-bottom-left-radius: 25px;
+        border-bottom-left-radius: calc(12.5 * (100vw / 960));
       }
     }
 
@@ -66,11 +66,11 @@
     }
 
     .tab__index {
-      margin-right: 16px;
+      margin-right: calc(8 * (100vw / 960));
 
       font-family: "Euclid Circular A", sans-serif;
 
-      font-size: calc(13px + 0.15625vw);
+      font-size: calc(8 * (100vw / 960));
       font-weight: normal;
       font-style: normal;
       line-height: 140%;
@@ -80,7 +80,7 @@
     }
 
     .tab__name {
-      max-width: 403px;
+      width: calc(201.5 * (100vw / 960));
     }
   }
 
@@ -96,16 +96,16 @@
     .tab__image {
       img {
         display: block;
-        border-top-right-radius: 25px;
+        border-top-right-radius: calc(14.5 * (100vw / 960));
 
         width: 100%;
-        height: 462px;
+        height: calc(231 * (100vw / 960));
         object-fit: cover;
       }
     }
 
     .tab__bottom {
-      padding: 36px 33px;
+      padding: calc(18 * (100vw / 960)) calc(16.5 * (100vw / 960));
 
       display: flex;
       flex-direction: column;
@@ -115,10 +115,10 @@
 
     .tab__text {
       max-width: 649px;
-      margin-bottom: 24px;
+      margin-bottom: calc(12 * (100vw / 960));
 
       font-family: "Manrope", sans-serif;
-      font-size: 21px;
+      font-size: calc(10.5 * (100vw / 960));
       font-weight: 500;
       font-style: normal;
       line-height: 133%;

@@ -11,25 +11,18 @@ body {
   overflow-x: hidden;
 
   font-family: "Manrope", sans-serif;
-  font-size: 18px;
+  font-size: calc(9 * (100vw / 960));
   font-weight: 500;
   font-style: normal;
   line-height: 133%;
-  letter-spacing: -0.9px;
+  letter-spacing: -0.05em;
 }
 
 .container {
   width: 100%;
   height: 100%;
-  max-width: 89.583vw;
+  padding: 0px calc(50 * (100vw / 960));
   margin: 0 auto;
-}
-
-@media screen and (max-width: 1440px) {
-  .container {
-    max-width: 100%;
-    padding: 0px 24px;
-  }
 }
 
 .wrapper {
@@ -38,7 +31,7 @@ body {
 
 section {
   &.section--rounded {
-    border-radius: 56px;
+    border-radius: calc(28 * (100vw / 960));
     position: relative;
     z-index: 100;
 
@@ -78,11 +71,11 @@ section {
   }
 
   & + section {
-    margin-top: -56px;
+    margin-top: calc(-28 * (100vw / 960));
   }
 
   &.section--rounded + &.section--no-rounded {
-    padding-top: 56px;
+    padding-top: calc(28 * (100vw / 960));
   }
 }
 
