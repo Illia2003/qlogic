@@ -46,6 +46,32 @@
   color: $heading-color;
 }
 
+.heading-3 {
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+
+  font-size: calc(24 * (100vw / 960));
+  font-weight: normal;
+  font-style: normal;
+  line-height: 133%;
+  letter-spacing: -0.05em;
+
+  color: $heading-color;
+}
+
+.heading-5 {
+  margin: 0px;
+  font-family: "Euclid Circular A", sans-serif;
+
+  font-size: calc(18 * (100vw / 960));
+  font-weight: normal;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+
+  text-transform: uppercase;
+}
+
 .heading-6 {
   margin: 0px;
   font-family: "Euclid Circular A", sans-serif;

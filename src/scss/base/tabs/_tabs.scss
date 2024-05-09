@@ -114,7 +114,7 @@
     }
 
     .tab__text {
-      max-width: 649px;
+      width: calc(324.5 * (100vw / 960));
       margin-bottom: calc(12 * (100vw / 960));
 
       font-family: "Manrope", sans-serif;

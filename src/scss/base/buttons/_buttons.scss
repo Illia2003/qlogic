@@ -56,7 +56,7 @@
   &.btn--main {
     padding: calc(4 * (100vw / 960));
 
-    border-radius: 50px;
+    border-radius: calc(25 * (100vw / 960));
 
     background-color: $theme-color;
     color: #fff;
@@ -103,7 +103,7 @@
 
     padding: calc(4 * (100vw / 960)) calc(6 * (100vw / 960));
 
-    border-radius: 50px;
+    border-radius: calc(25 * (100vw / 960));
 
     background-color: $heading-color;
     color: #fff;
@@ -146,7 +146,7 @@
   &.btn--icon {
     padding: calc(4 * (100vw / 960)) calc(12 * (100vw / 960));
     background-color: #fff;
-    border-radius: 100px;
+    border-radius: calc(50 * (100vw / 960));
 
     display: inline-flex;
     align-items: center;

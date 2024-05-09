@@ -1,0 +1,61 @@
+.benefits {
+  .benefits__fixed {
+    width: calc(387 * (100vw / 960));
+
+    .benefits__subtitle {
+      margin-bottom: calc(12 * (100vw / 960));
+    }
+
+    .section__title {
+      margin-bottom: calc(32 * (100vw / 960));
+    }
+  }
+
+  .benefits__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    & + .benefits__item {
+      margin-top: calc(50 * (100vw / 960));
+    }
+
+    .benefits__icon {
+      width: calc(105 * (100vw / 960));
+      height: calc(105 * (100vw / 960));
+
+      background-color: #fff;
+      border-radius: 100%;
+
+      margin-right: calc(24 * (100vw / 960));
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      lord-icon {
+        width: calc(50 * (100vw / 960));
+        height: calc(50 * (100vw / 960));
+      }
+    }
+
+    .benefits__text {
+      width: calc(253 * (100vw / 960));
+
+      .benefits__name {
+        margin-bottom: calc(6 * (100vw / 960));
+        color: $theme-color;
+      }
+
+      .benefits__description {
+        font-family: "Manrope", sans-serif;
+        font-size: calc(10.5 * (100vw / 960));
+        font-weight: 500;
+        font-style: normal;
+        line-height: 133%;
+        letter-spacing: -0.05em;
+        color: $text-color;
+      }
+    }
+  }
+}

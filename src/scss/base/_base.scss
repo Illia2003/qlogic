@@ -43,7 +43,12 @@ section {
   }
 
   &.section--white {
-    background-color: #fff;
+    background-color: $light-background-color;
+
+    & + section.section--white {
+      border-radius: 0;
+      padding-top: calc(28 * (100vw / 960));
+    }
   }
 
   &.section--blue {
@@ -76,6 +81,7 @@ section {
 
   &.section--rounded + &.section--no-rounded {
     padding-top: calc(28 * (100vw / 960));
+    padding-bottom: calc(-28 * (100vw / 960));
   }
 }
 
@@ -99,3 +105,6 @@ body :not(.intial-colors) {
 
 /* STYLES FOR TABS */
 @import "./tabs/tabs";
+
+/* STYLES FOR SWIPER */
+@import "./swiper/swiper";

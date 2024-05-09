@@ -4,14 +4,14 @@
   }
 
   .tabs-section__top {
-    margin-bottom: 72px;
+    margin-bottom: calc(36 * (100vw / 960));
 
     .tabs-section__subtitle {
-      margin-bottom: 24px;
+      margin-bottom: calc(12 * (100vw / 960));
     }
 
     .section__title {
-      width: 14.35em;
+      width: calc(660 * (100vw / 960));
       text-align: center;
     }
   }

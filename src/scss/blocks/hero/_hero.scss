@@ -102,7 +102,7 @@
         display: block;
         padding: calc(6 * (100vw / 960)) calc(8 * (100vw / 960));
 
-        border-radius: 250px;
+        border-radius: calc(125 * (100vw / 960));
 
         color: #fff;
         transition: all 0.3s linear;
@@ -121,7 +121,7 @@
         padding: calc(4 * (100vw / 960));
         gap: calc(4 * (100vw / 960));
 
-        border-radius: 50px;
+        border-radius: calc(25 * (100vw / 960));
       }
     }
 
