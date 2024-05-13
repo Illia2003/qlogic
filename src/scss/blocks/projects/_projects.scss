@@ -18,7 +18,9 @@
 
   .projects__item {
     width: 100%;
-    flex-grow: 0;
+    display: flex;
+    flex-shrink: 0;
+
     min-height: calc(454.5 * (100vw / 960));
 
     border-radius: calc(12.5 * (100vw / 960));

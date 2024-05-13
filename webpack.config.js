@@ -27,14 +27,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg)/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "images/[name].[ext]",
-            },
-          },
-        ],
+        type: "asset/resource",
       },
     ],
   },
@@ -48,6 +41,8 @@ module.exports = {
     }),
   ],
   output: {
+    publicPath: "/",
+    assetModuleFilename: "images/[name][ext]",
     clean: true,
   },
   devServer: {

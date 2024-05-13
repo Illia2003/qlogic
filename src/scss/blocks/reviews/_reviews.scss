@@ -1,0 +1,117 @@
+.reviews {
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: calc(99.5 * (100vw / 960));
+
+    width: calc(251 * (100vw / 960));
+    height: calc(463 * (100vw / 960));
+
+    background-color: $theme-color;
+
+    border-top-left-radius: calc(12.5 * (100vw / 960));
+    border-bottom-left-radius: calc(12.5 * (100vw / 960));
+
+    z-index: -1;
+  }
+
+  .reviews__wrapper {
+    padding-top: calc(67.5 * (100vw / 960));
+    padding-bottom: calc(72 * (100vw / 960));
+  }
+
+  .reviews__top {
+    margin-bottom: calc(4 * (100vw / 960));
+  }
+
+  .reviews__content {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .reviews__reviews-swiper {
+      width: calc(421 * (100vw / 960));
+    }
+
+    .reviews__certifications-swiper {
+      width: calc(317 * (100vw / 960));
+    }
+  }
+
+  .review__author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .author__avatar {
+      margin-right: calc(9 * (100vw / 960));
+    }
+
+    img {
+      width: calc(36 * (100vw / 960));
+      height: calc(36 * (100vw / 960));
+
+      border-radius: 100%;
+    }
+
+    .author__name {
+      margin-bottom: 2px;
+      font-family: "Manrope", sans-serif;
+      font-size: calc(9 * (100vw / 960));
+      font-weight: 600;
+      font-style: normal;
+      line-height: 133%;
+      letter-spacing: -0.05em;
+      color: $heading-color;
+    }
+
+    .author__job-position {
+      font-family: "Manrope", sans-serif;
+      font-size: calc(9 * (100vw / 960));
+      font-weight: 500;
+      font-style: normal;
+      line-height: 133%;
+      letter-spacing: -0.05em;
+      color: $text-color;
+    }
+  }
+
+  .reviews__reviews-swiper {
+    .swiper-bullets {
+      margin-bottom: calc(18 * (100vw / 960));
+    }
+
+    .review__text {
+      margin-bottom: calc(38 * (100vw / 960));
+    }
+
+    .review__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .reviews__certifications-swiper {
+    width: calc(317 * (100vw / 960));
+
+    .swiper-slide {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: calc(399 * (100vw / 960));
+
+      border-radius: calc(12.5 * (100vw / 960));
+    }
+  }
+}

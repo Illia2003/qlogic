@@ -16,6 +16,7 @@ body {
   font-style: normal;
   line-height: 133%;
   letter-spacing: -0.05em;
+  color: $text-color;
 }
 
 .container {
@@ -46,7 +47,9 @@ section {
     background-color: $light-background-color;
 
     & + section.section--white {
-      border-radius: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+
       padding-top: calc(28 * (100vw / 960));
     }
   }
@@ -81,7 +84,7 @@ section {
 
   &.section--rounded + &.section--no-rounded {
     padding-top: calc(28 * (100vw / 960));
-    padding-bottom: calc(-28 * (100vw / 960));
+    margin-bottom: calc(-28 * (100vw / 960));
   }
 }
 
@@ -91,6 +94,30 @@ body :not(.intial-colors) {
       fill: inherit;
       stroke: inherit;
     }
+  }
+}
+
+/* STYLES FOR LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .logo__image {
+    padding-right: 0.9375vw;
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.4);
+
+    img {
+      width: calc(70 * (100vw / 960));
+      height: auto;
+
+      display: block;
+    }
+  }
+
+  .logo__tagline {
+    width: calc(121 * (100vw / 960));
+    padding-left: 0.9375vw;
   }
 }
 
@@ -108,3 +135,6 @@ body :not(.intial-colors) {
 
 /* STYLES FOR SWIPER */
 @import "./swiper/swiper";
+
+/* STYLES FOR FORM */
+@import "./form/form";

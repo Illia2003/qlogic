@@ -66,28 +66,6 @@
 
     align-items: stretch;
 
-    .header__logo {
-      display: flex;
-      align-items: center;
-
-      .logo__image {
-        padding-right: 0.9375vw;
-        border-right: 1px solid rgba($color: #fff, $alpha: 0.4);
-
-        img {
-          width: calc(70 * (100vw / 960));
-          height: auto;
-
-          display: block;
-        }
-      }
-
-      .logo__tagline {
-        width: calc(121 * (100vw / 960));
-        padding-left: 0.9375vw;
-      }
-    }
-
     .header__navigation {
       a {
         margin: 0px;

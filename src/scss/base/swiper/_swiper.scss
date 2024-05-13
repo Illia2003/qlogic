@@ -1,8 +1,11 @@
-.swiper {
+div.swiper {
+  width: 100%;
+  margin: 0;
   overflow: hidden;
 
   .swiper-wrapper {
     max-width: 100%;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -33,6 +36,26 @@
       stroke: $heading-color;
       width: calc(9 * (100vw / 960));
       height: calc(7 * (100vw / 960));
+    }
+  }
+
+  .swiper-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: calc(4 * (100vw / 960));
+
+    .swiper-pagination-bullet {
+      width: calc(4 * (100vw / 960));
+      height: calc(4 * (100vw / 960));
+
+      background-color: $border-color;
+      transition: all 0.3s linear;
+
+      &.swiper-pagination-bullet-active {
+        width: calc(6 * (100vw / 960));
+        height: calc(6 * (100vw / 960));
+      }
     }
   }
 }

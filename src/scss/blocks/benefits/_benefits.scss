@@ -1,4 +1,9 @@
 .benefits {
+  .benefits__wrapper {
+    padding-top: calc(48 * (100vw / 960));
+    padding-bottom: calc(48 * (100vw / 960));
+  }
+
   .benefits__fixed {
     width: calc(387 * (100vw / 960));
 
