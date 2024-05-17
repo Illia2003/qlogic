@@ -93,7 +93,7 @@
   border-radius: 250px;
 
   margin: 0px;
-  margin-top: calc(5.5 * (100vw / 960));
+  margin-bottom: calc(12 * (100vw / 960));
 
   font-family: "Manrope", sans-serif;
   font-size: calc(9 * (100vw / 960));
@@ -148,4 +148,69 @@
   letter-spacing: -0.02em;
 
   color: $heading-color;
+}
+
+@media screen and (max-width: 960px) {
+  .heading-1 {
+    font-size: calc(40px + 62.4 * ((100vw - 375px) / 585));
+    line-height: 110%;
+
+    display: inline-block;
+
+    span {
+      &:nth-of-type(2n) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .heading-2 {
+    font-size: calc(34px + 53 * ((100vw - 375px) / 585));
+    line-height: 110%;
+  }
+
+  .heading-3 {
+    font-size: calc(24px + 37.44 * ((100vw - 375px) / 585));
+  }
+
+  .heading-5 {
+    font-size: calc(21px + 33 * ((100vw - 375px) / 585));
+  }
+
+  .heading-6 {
+    font-size: calc(18px + 28.08 * ((100vw - 375px) / 585));
+  }
+
+  .subtitle {
+    display: inline-block;
+    padding: calc(12px + 19 * ((100vw - 375px) / 585));
+    border: 1px solid $border-color;
+
+    border-radius: 250px;
+
+    margin-top: 0;
+    margin-bottom: calc(16px + 8 * ((100vw - 375px) / 585));
+
+    font-size: calc(14px + 22 * ((100vw - 375px) / 585));
+  }
+
+  .text--small {
+    margin: 0px;
+    font-family: "Manrope", sans-serif;
+    font-size: calc(7.5 * (100vw / 960));
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.03em;
+  }
+
+  .text--regular {
+    font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+    line-height: 133%;
+  }
+
+  .text--big {
+    font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+    line-height: 133%;
+  }
 }

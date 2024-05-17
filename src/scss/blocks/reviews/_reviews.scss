@@ -115,3 +115,109 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .reviews {
+    &::after {
+      right: 0;
+      left: 0;
+      top: auto;
+      bottom: calc(75px + 192 * ((100vw - 375px) / 585));
+
+      width: 100%;
+      height: calc(418px + 652 * ((100vw - 375px) / 585));
+
+      border-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+    }
+
+    .reviews__wrapper {
+      padding-top: calc(72px + 36 * ((100vw - 375px) / 585));
+      padding-bottom: calc(128px + 200 * ((100vw - 375px) / 585));
+    }
+
+    .reviews__top {
+      margin-bottom: calc(20px + 31 * ((100vw - 375px) / 585));
+    }
+
+    .reviews__content {
+      width: 100%;
+
+      flex-direction: column;
+      align-items: flex-start;
+
+      .reviews__reviews-swiper,
+      .reviews__certifications-swiper {
+        width: 100%;
+      }
+
+      .reviews__reviews-swiper {
+        margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+      }
+    }
+
+    .swiper-navigation-button {
+      width: calc(56px + 87 * ((100vw - 375px) / 585));
+      height: calc(56px + 87 * ((100vw - 375px) / 585));
+      flex-shrink: 0;
+
+      svg {
+        width: calc(12px + 19 * ((100vw - 375px) / 585));
+        height: calc(9px + 14 * ((100vw - 375px) / 585));
+      }
+    }
+
+    .review__author {
+      width: 100%;
+      .author__avatar {
+        margin-right: calc(12px + 19 * (100vw - 375px) / 585);
+      }
+
+      img {
+        width: calc(64px + 100 * (100vw - 375px) / 585);
+        height: calc(64px + 100 * (100vw - 375px) / 585);
+
+        border-radius: 100%;
+      }
+
+      .author__name {
+        font-size: calc(15px + 23 * (100vw - 375px) / 585);
+      }
+
+      .author__job-position {
+        font-size: calc(15px + 23 * (100vw - 375px) / 585);
+        line-height: 130%;
+      }
+    }
+
+    .reviews__reviews-swiper {
+      .swiper-bullets {
+        margin-bottom: 0px;
+      }
+
+      .swiper-wrapper {
+        margin-bottom: calc(24px + 37 * (100vw - 375px) / 585);
+      }
+
+      .review__text {
+        margin-bottom: calc(16px + 25 * (100vw - 375px) / 585);
+      }
+
+      .reviews__item {
+        .reviews__navigation {
+          display: none;
+        }
+      }
+    }
+
+    .reviews__certifications-swiper {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: calc(437px + 682 * (100vw - 375px) / 585);
+
+        border-radius: calc(25px + 39 * (100vw - 375px) / 585);
+      }
+    }
+  }
+}

@@ -28,6 +28,7 @@ input {
     justify-content: flex-start;
 
     gap: calc(8 * (100vw / 960));
+    width: 100%;
 
     .form__input {
       width: 100%;
@@ -85,6 +86,61 @@ input {
 
       a {
         color: rgba($color: #768495, $alpha: 0.7);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  //calc(72px + 36 * ((100vw - 375px) / 585))
+
+  input {
+    font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+  }
+
+  .form {
+    .form__fields {
+      gap: calc(12px + 19 * ((100vw - 375px) / 585));
+      width: 100%;
+
+      .form__input {
+        width: 100%;
+
+        input {
+          padding-top: calc(18px + 28 * ((100vw - 375px) / 585));
+          padding-bottom: calc(18px + 28 * ((100vw - 375px) / 585));
+          padding-left: calc(16px + 25 * ((100vw - 375px) / 585));
+          padding-right: calc(16px + 25 * ((100vw - 375px) / 585));
+
+          border-radius: calc(10px + 16 * ((100vw - 375px) / 585));
+        }
+
+        &.form__phone {
+          border-radius: calc(10px + 16 * ((100vw - 375px) / 585));
+
+          padding-left: calc(16px + 25 * ((100vw - 375px) / 585));
+          padding-right: calc(16px + 25 * ((100vw - 375px) / 585));
+
+          .phone__code {
+            margin-right: 0.25em;
+          }
+
+          input {
+            width: 100%;
+
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .form__bottom {
+      margin-top: calc(16px + 25 * ((100vw - 375px) / 585));
+
+      .form__privacy-policies {
+        font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+        text-align: center;
       }
     }
   }

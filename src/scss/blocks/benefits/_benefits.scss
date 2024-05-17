@@ -7,10 +7,6 @@
   .benefits__fixed {
     width: calc(387 * (100vw / 960));
 
-    .benefits__subtitle {
-      margin-bottom: calc(12 * (100vw / 960));
-    }
-
     .section__title {
       margin-bottom: calc(32 * (100vw / 960));
     }
@@ -60,6 +56,59 @@
         line-height: 133%;
         letter-spacing: -0.05em;
         color: $text-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .benefits {
+    .benefits__wrapper {
+      padding-top: calc(72px + 36 * ((100vw - 375px) / 585));
+      padding-bottom: calc(72px + 36 * ((100vw - 375px) / 585));
+
+      flex-direction: column;
+    }
+
+    .benefits__fixed {
+      width: 100%;
+      margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+
+      .section__title {
+        margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+      }
+    }
+
+    .benefits__item {
+      flex-direction: column;
+
+      & + .benefits__item {
+        margin-top: calc(24px + 37 * ((100vw - 375px) / 585));
+      }
+
+      .benefits__icon {
+        width: calc(90px + 140 * ((100vw - 375px) / 585));
+        height: calc(90px + 140 * ((100vw - 375px) / 585));
+
+        margin-right: 0;
+        margin-bottom: calc(8px + 12 * ((100vw - 375px) / 585));
+
+        lord-icon {
+          width: calc(48px + 75 * ((100vw - 375px) / 585));
+          height: calc(48px + 75 * ((100vw - 375px) / 585));
+        }
+      }
+
+      .benefits__text {
+        width: 100%;
+
+        .benefits__name {
+          margin-bottom: calc(6px + 9 * ((100vw - 375px) / 585));
+        }
+
+        .benefits__description {
+          font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+        }
       }
     }
   }

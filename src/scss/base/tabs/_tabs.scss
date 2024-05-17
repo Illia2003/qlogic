@@ -89,6 +89,10 @@
     height: 100%;
     color: #fff;
 
+    .accordion__top {
+      display: none;
+    }
+
     &.active {
       display: block;
     }
@@ -123,6 +127,92 @@
       font-style: normal;
       line-height: 133%;
       letter-spacing: -0.05em;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .tabs {
+    .tabs__items {
+      display: none;
+    }
+
+    .tabs__content {
+      width: 100%;
+      flex: 1 1 auto;
+      border: none;
+    }
+
+    .tab__content {
+      display: flex;
+      width: 100%;
+
+      .accordion__top {
+        display: flex;
+
+        .accordion__name {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          gap: calc(8px + 13 * ((100vw - 375px) / 585));
+          width: calc(256px + 373 * ((100vw - 375px) / 585));
+        }
+
+        .tab__index {
+          font-size: calc(13px + 20 * ((100vw - 375px) / 585));
+          line-height: 140%;
+        }
+
+        .tab__name {
+          font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+          line-height: 140%;
+        }
+      }
+
+      .accordion__content {
+        display: none;
+
+        &.active {
+          display: flex;
+        }
+      }
+
+      .tab__image {
+        width: 100%;
+        margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+
+        img {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+          border-bottom-left-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+
+          width: 100%;
+          height: calc(180px + 281 * ((100vw - 375px) / 585));
+        }
+      }
+
+      .tab__bottom {
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+      }
+
+      .tab__btn {
+        width: 100%;
+      }
+
+      .tab__text {
+        width: 100%;
+        margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+
+        font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+        line-height: 133%;
+      }
     }
   }
 }

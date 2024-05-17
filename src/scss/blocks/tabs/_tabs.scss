@@ -6,13 +6,26 @@
   .tabs-section__top {
     margin-bottom: calc(36 * (100vw / 960));
 
-    .tabs-section__subtitle {
-      margin-bottom: calc(12 * (100vw / 960));
-    }
-
     .section__title {
       width: calc(660 * (100vw / 960));
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .tabs-section {
+    .tabs-section__wrapper {
+      padding-top: calc(72px + 36 * ((100vw - 375px) / 585));
+      padding-bottom: calc(128px + 200 * ((100vw - 375px) / 585));
+    }
+
+    .tabs-section__top {
+      margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+
+      .section__title {
+        width: 100%;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-div.swiper {
+.swiper {
   width: 100%;
   margin: 0;
   overflow: hidden;
@@ -55,6 +55,51 @@ div.swiper {
       &.swiper-pagination-bullet-active {
         width: calc(6 * (100vw / 960));
         height: calc(6 * (100vw / 960));
+      }
+    }
+  }
+
+  .swiper-navigation-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .swiper {
+    .swiper-navigation {
+      gap: calc(6px + 9 * ((100vw - 375px) / 585));
+    }
+
+    .swiper-navigation-button {
+      width: calc(48px + 75 * ((100vw - 375px) / 585));
+      height: calc(48px + 75 * ((100vw - 375px) / 585));
+      flex-shrink: 0;
+
+      svg {
+        width: calc(11px + 17 * ((100vw - 375px) / 585));
+        height: calc(8px + 12 * ((100vw - 375px) / 585));
+      }
+    }
+
+    .swiper-navigation-mobile {
+      display: flex;
+      width: 100%;
+    }
+
+    .swiper-bullets {
+      align-items: center;
+      justify-content: center;
+
+      gap: calc(6px + 9 * ((100vw - 375px) / 585));
+
+      .swiper-pagination-bullet {
+        width: calc(8px + 13 * ((100vw - 375px) / 585));
+        height: calc(8px + 13 * ((100vw - 375px) / 585));
+
+        &.swiper-pagination-bullet-active {
+          width: calc(8px + 13 * ((100vw - 375px) / 585));
+          height: calc(8px + 13 * ((100vw - 375px) / 585));
+        }
       }
     }
   }

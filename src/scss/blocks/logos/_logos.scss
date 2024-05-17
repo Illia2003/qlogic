@@ -11,10 +11,6 @@
 
     margin-bottom: calc(36 * (100vw / 960));
 
-    .subtitle {
-      margin-bottom: calc(12 * (100vw / 960));
-    }
-
     .logos__title {
       width: calc(567.5 * (100vw / 960));
     }
@@ -45,11 +41,11 @@
 
       img {
         height: auto;
+        margin-bottom: calc(4 * (100vw / 960));
       }
 
       .heading-6 {
         color: $theme-color;
-        margin-top: calc(4 * (100vw / 960));
       }
 
       &.logos__item--last {
@@ -57,7 +53,6 @@
         border: none;
 
         .heading-6 {
-          margin-top: 0px;
           margin-bottom: calc(4 * (100vw / 960));
 
           color: #fff;
@@ -69,6 +64,68 @@
 
           text-align: center;
           line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  //calc(15px + 7.5 * ((100vw - 375px) / 585))
+
+  .logos {
+    .logos__wrapper {
+      padding-top: calc(100px + 156 * ((100vw - 375px) / 585));
+      padding-bottom: calc(90px + 140 * ((100vw - 375px) / 585));
+    }
+
+    .logos__top {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+
+      .logos__title,
+      .logos__description {
+        width: 100%;
+      }
+
+      .logos__title {
+        margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+      }
+    }
+
+    .logos__list {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      gap: calc(12px + 19 * ((100vw - 375px) / 585)) 0;
+
+      .logos__item {
+        width: calc(160px + 250 * ((100vw - 375px) / 585));
+        height: calc(120px + 187 * ((100vw - 375px) / 585));
+
+        border-width: calc(0.4px + 0.6 * ((100vw - 375px) / 585));
+        border-radius: calc(10px + 16 * ((100vw - 375px) / 585));
+
+        img {
+          margin-bottom: calc(6px + 9 * ((100vw - 375px) / 585));
+        }
+
+        .heading-6 {
+          font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+        }
+
+        &.logos__item--last {
+          .heading-6 {
+            margin-bottom: calc(4 * (100vw / 960));
+          }
+
+          .logos__item-description {
+            display: none;
+          }
         }
       }
     }

@@ -1,0 +1,121 @@
+.popup {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  z-index: 999;
+
+  &.show {
+    display: block;
+  }
+
+  .popup__title {
+    color: $theme-color;
+    margin-bottom: calc(4 * (100vw / 960));
+  }
+
+  .popup__text {
+    width: calc(240 * (100vw / 960));
+    text-align: center;
+    margin-bottom: calc(18 * (100vw / 960));
+
+    font-size: calc(10 * (100vw / 960));
+    line-height: 140%;
+  }
+
+  .popup__body {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba($color: $heading-color, $alpha: 0.6);
+  }
+
+  .popup__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: calc(28 * (100vw / 960));
+
+    padding-right: calc(18 * (100vw / 960));
+    padding-left: calc(18 * (100vw / 960));
+    padding-top: calc(15 * (100vw / 960));
+    padding-bottom: calc(31 * (100vw / 960));
+
+    width: calc(400 * (100vw / 960));
+  }
+
+  .popup__form {
+    width: calc(336 * (100vw / 960));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form__privacy-policies {
+      width: calc(206 * (100vw / 960));
+      text-align: center;
+    }
+  }
+
+  .popup__close {
+    align-self: flex-end;
+    cursor: pointer;
+
+    svg {
+      stroke: $text-color;
+      width: calc(10.5 * (100vw / 960));
+      height: calc(10.5 * (100vw / 960));
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .popup {
+    .popup__close {
+      margin-bottom: calc(10px + 16 * ((100vw - 375px) / 585));
+
+      svg {
+        width: calc(16px + 25 * ((100vw - 375px) / 585));
+        height: calc(16px + 25 * ((100vw - 375px) / 585));
+      }
+    }
+
+    .popup__content {
+      border-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+
+      padding-right: calc(12px + 19 * ((100vw - 375px) / 585));
+      padding-left: calc(12px + 19 * ((100vw - 375px) / 585));
+      padding-top: calc(12px + 19 * ((100vw - 375px) / 585));
+      padding-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+
+      width: calc(343px + 535 * ((100vw - 375px) / 585));
+    }
+
+    .popup__title {
+      margin-bottom: calc(8px + 13 * ((100vw - 375px) / 585));
+    }
+
+    .popup__text {
+      width: calc(310px + 484 * ((100vw - 375px) / 585));
+      margin-bottom: calc(24px + 37 * ((100vw - 375px) / 585));
+
+      font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+    }
+
+    .popup__form {
+      width: calc(310px + 484 * ((100vw - 375px) / 585));
+
+      .form__privacy-policies {
+        width: calc(280px + 437 * ((100vw - 375px) / 585));
+      }
+    }
+  }
+}

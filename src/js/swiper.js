@@ -30,14 +30,31 @@ if ($(".reviews").length) {
 
     effect: "fade",
 
-    navigation: {
-      nextEl: ".reviews .swiper .swiper-navigation-next-button",
-      prevEl: ".reviews .swiper .swiper-navigation-prev-button",
-    },
+    breakpoints: {
+      320: {
+        navigation: {
+          nextEl:
+            ".reviews .swiper .swiper-navigation-mobile .swiper-navigation-next-button",
+          prevEl:
+            ".reviews .swiper .swiper-navigation-mobile .swiper-navigation-prev-button",
+        },
 
-    pagination: {
-      el: ".reviews .swiper .swiper-bullets",
-      clickable: true,
+        pagination: {
+          el: ".reviews .swiper .swiper-navigation-mobile .swiper-bullets",
+          clickable: true,
+        },
+      },
+      961: {
+        navigation: {
+          nextEl: ".reviews .swiper .swiper-navigation-next-button",
+          prevEl: ".reviews .swiper .swiper-navigation-prev-button",
+        },
+
+        pagination: {
+          el: ".reviews .swiper .swiper-bullets",
+          clickable: true,
+        },
+      },
     },
   });
 }

@@ -17,6 +17,16 @@ body {
   line-height: 133%;
   letter-spacing: -0.05em;
   color: $text-color;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    font-size: calc(15px + 23.4 * ((100vw - 375px) / 585));
+  }
 }
 
 .container {
@@ -24,6 +34,13 @@ body {
   height: 100%;
   padding: 0px calc(50 * (100vw / 960));
   margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding-left: calc(16px + 8 * ((100vw - 375px) / 585));
+    padding-right: calc(16px + 8 * ((100vw - 375px) / 585));
+  }
 }
 
 .wrapper {
@@ -88,6 +105,43 @@ section {
   }
 }
 
+@media screen and (max-width: 960px) {
+  section {
+    &.section--rounded {
+      border-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+      position: relative;
+      z-index: 100;
+
+      & + & {
+        z-index: 90;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &.section--white {
+      background-color: $light-background-color;
+
+      & + section.section--white {
+        padding-top: calc(56px + 87 * ((100vw - 375px) / 585));
+      }
+    }
+
+    & + section {
+      margin-top: calc(-56px - 87 * ((100vw - 375px) / 585));
+    }
+
+    &.section--rounded + &.section--no-rounded {
+      padding-top: calc(56px + 87 * ((100vw - 375px) / 585));
+      margin-bottom: calc(-56px - 87 * ((100vw - 375px) / 585));
+    }
+  }
+}
+
+svg {
+  display: block;
+}
+
 body :not(.intial-colors) {
   > svg {
     path {
@@ -121,6 +175,26 @@ body :not(.intial-colors) {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .logo {
+    .logo__image {
+      padding-right: 0;
+      border-right: none;
+
+      img {
+        width: auto;
+        height: calc(47px + 23.5 * ((100vw - 375px) / 585));
+
+        display: block;
+      }
+    }
+
+    .logo__tagline {
+      display: none;
+    }
+  }
+}
+
 /* STYLES FOR TEXT */
 @import "./text/text";
 
@@ -138,3 +212,12 @@ body :not(.intial-colors) {
 
 /* STYLES FOR FORM */
 @import "./form/form";
+
+/* STYLES FOR BURGER MENU */
+@import "./burger-menu/burger-menu";
+
+/* STYLES FOR POPUP */
+@import "./popup/popup";
+
+/* STYLES FOR POPUP */
+@import "./accordion/accordion";

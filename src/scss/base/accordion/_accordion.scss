@@ -1,0 +1,109 @@
+@media screen and (max-width: 960px) {
+  .accordion {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    border: none;
+
+    .accordion__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+
+      padding: calc(16px + 25 * ((100vw - 375px) / 585));
+
+      color: rgba($color: #fff, $alpha: 0.6);
+      transition: all 0.3s linear;
+    }
+
+    .accordion__content {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .accordion__icon {
+      border: calc(1px + 2 * ((100vw - 375px) / 585)) solid
+        rgba($color: #fff, $alpha: 0.6);
+      flex-shrink: 0;
+
+      width: calc(32px + 50 * ((100vw - 375px) / 585));
+      height: calc(32px + 50 * ((100vw - 375px) / 585));
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: calc(5px + 8 * ((100vw - 375px) / 585));
+
+      svg {
+        width: calc(18px + 28 * ((100vw - 375px) / 585));
+        height: calc(18px + 28 * ((100vw - 375px) / 585));
+        stroke: rgba($color: #fff, $alpha: 0.6);
+
+        path {
+          transition: all 0.3s linear;
+
+          transform-origin: center;
+        }
+      }
+    }
+
+    .accordion__item {
+      border-top: calc(1px + 2 * ((100vw - 375px) / 585)) solid #a6acb3;
+      border-bottom: calc(1px + 2 * ((100vw - 375px) / 585)) solid #a6acb3;
+
+      & + .accordion__item {
+        margin-top: calc(-1px - 2 * ((100vw - 375px) / 585));
+      }
+
+      &.active,
+      &:hover,
+      &:focus {
+        .accordion__top {
+          background-color: $theme-color;
+          color: #fff;
+        }
+
+        .accordion__icon {
+          border-color: #fff;
+
+          svg {
+            stroke: #fff;
+
+            path {
+              &:last-of-type {
+                transform: rotate(90deg);
+              }
+            }
+          }
+        }
+      }
+
+      &:first-of-type {
+        &.active,
+        &:hover,
+        &:focus {
+          border-top-color: transparent;
+
+          .accordion__top {
+            border-top-left-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+            border-top-right-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+          }
+        }
+      }
+
+      &.active {
+        border-top: none;
+
+        .accordion__content {
+          display: flex;
+        }
+      }
+    }
+  }
+}

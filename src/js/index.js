@@ -26,6 +26,8 @@ import "../scss/main.scss";
 
 import "./tabs";
 import "./swiper";
+import "./popup";
+import "./accordion";
 
 import lottie from "lottie-web";
 import { defineElement } from "@lordicon/element";
