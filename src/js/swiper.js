@@ -26,6 +26,7 @@ if ($(".reviews").length) {
 
     slideClass: "swiper-slide",
     slidesPerView: 1,
+    allowTouchMove: false,
     fadeEffect: { crossFade: true },
 
     effect: "fade",
