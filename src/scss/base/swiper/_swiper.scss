@@ -1,4 +1,4 @@
-.swiper {
+div.swiper {
   width: 100%;
   margin: 0;
   overflow: hidden;
@@ -32,10 +32,24 @@
 
     cursor: pointer;
 
+    transition: all 0.3s linear;
+
     svg {
       stroke: $heading-color;
       width: calc(9 * (100vw / 960));
       height: calc(7 * (100vw / 960));
+
+      transition: all 0.3s linear;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $theme-color;
+      border-color: $theme-color;
+
+      svg {
+        stroke: #fff;
+      }
     }
   }
 

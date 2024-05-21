@@ -28,6 +28,7 @@ import "./tabs";
 import "./swiper";
 import "./popup";
 import "./accordion";
+import "./animation";
 
 import lottie from "lottie-web";
 import { defineElement } from "@lordicon/element";

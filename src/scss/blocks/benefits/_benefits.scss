@@ -1,15 +1,20 @@
 .benefits {
   .benefits__wrapper {
-    padding-top: calc(48 * (100vw / 960));
+    padding-top: calc(24 * (100vw / 960));
     padding-bottom: calc(48 * (100vw / 960));
   }
 
   .benefits__fixed {
     width: calc(387 * (100vw / 960));
+    padding-top: calc(24 * (100vw / 960));
 
     .section__title {
       margin-bottom: calc(32 * (100vw / 960));
     }
+  }
+
+  .benefits__list {
+    padding-top: calc(24 * (100vw / 960));
   }
 
   .benefits__item {
@@ -73,10 +78,15 @@
     .benefits__fixed {
       width: 100%;
       margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+      padding-top: 0;
 
       .section__title {
         margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
       }
+    }
+
+    .benefits__list {
+      padding-top: 0;
     }
 
     .benefits__item {

@@ -1,0 +1,51 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 1000;
+  background-color: $theme-color;
+
+  .preloader__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: calc(24 * (100vw / 960));
+    padding-bottom: calc(24 * (100vw / 960));
+  }
+
+  .preloader__number {
+    font-family: "Manrope", sans-serif;
+
+    font-size: calc(125 * (100vw / 960));
+    font-weight: 500;
+    font-style: normal;
+    line-height: 85%;
+    letter-spacing: -0.05em;
+
+    color: #fff;
+  }
+
+  .preloader__logo {
+    display: flex;
+    flex-direction: column;
+    width: calc(158.5 * (100vw / 960));
+
+    .logo__image {
+      margin-bottom: calc(8 * (100vw / 960));
+    }
+
+    .logo__tagline {
+      color: #fff;
+
+      font-family: "Manrope", sans-serif;
+      font-size: calc(10 * (100vw / 960));
+      font-weight: 500;
+      font-style: normal;
+      line-height: 140%;
+      letter-spacing: -0.03em;
+    }
+  }
+}
