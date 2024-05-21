@@ -49,3 +49,34 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .preloader {
+    .preloader__content {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: calc(24px + 37 * ((100vw - 375px) / 585));
+      padding-bottom: calc(24px + 37 * ((100vw - 375px) / 585));
+    }
+
+    .preloader__number {
+      font-size: calc(72px + 112 * ((100vw - 375px) / 585));
+      line-height: 100%;
+    }
+
+    .preloader__logo {
+      width: calc(240px + 374 * ((100vw - 375px) / 585));
+      margin-bottom: calc(24px + 37 * ((100vw - 375px) / 585));
+
+      .logo__image {
+        margin-bottom: calc(8px + 12 * ((100vw - 375px) / 585));
+      }
+
+      .logo__tagline {
+        font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+        line-height: 133%;
+      }
+    }
+  }
+}
