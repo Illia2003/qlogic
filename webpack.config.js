@@ -46,7 +46,7 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    static: "./public",
+    static: "./dist",
     open: true,
   },
 };
