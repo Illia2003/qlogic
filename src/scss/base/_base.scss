@@ -128,7 +128,7 @@ section {
     }
 
     & + section {
-      margin-top: calc(-56px - 87 * ((100vw - 375px) / 585));
+      margin-top: calc(-28px - 44 * ((100vw - 375px) / 585));
     }
 
     &.section--rounded + &.section--no-rounded {
