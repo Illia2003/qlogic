@@ -63,7 +63,7 @@ div.swiper {
       width: calc(4 * (100vw / 960));
       height: calc(4 * (100vw / 960));
 
-      background-color: $border-color;
+      background-color: $heading-color;
       transition: all 0.3s linear;
 
       &.swiper-pagination-bullet-active {

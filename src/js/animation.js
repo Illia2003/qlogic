@@ -61,7 +61,7 @@ if (horizontalScrolling) {
       scrollTrigger: {
         trigger: horizontalScrolling,
         start: `${56 * (innerWidth / 960)}px top`,
-        end: () => innerWidth * 3,
+        end: () => innerWidth * 2,
         scrub: true,
         pin: true,
         invalidateOnRefresh: true,
@@ -74,7 +74,7 @@ if (horizontalScrolling) {
       scrollTrigger: {
         trigger: horizontalScrolling,
         start: `${56 * (innerWidth / 960)}px top`,
-        end: () => innerWidth * 3,
+        end: () => innerWidth * 2,
         scrub: true,
       },
     });
@@ -148,9 +148,12 @@ if (stickySections.length) {
         trigger: section.querySelector(".sticky-element"),
         pin: true,
         start: "top top",
-        endTrigger: section.querySelector(".sticky-no-element"),
-        end: "bottom bottom",
-        scrub: 0.5,
+        end: `+=${
+          section.querySelector(".sticky-no-element").offsetHeight -
+          section.querySelector(".sticky-element .sticky-element__content")
+            .offsetHeight
+        }`,
+        scrub: 1,
         invalidateOnRefresh: true,
       });
     });

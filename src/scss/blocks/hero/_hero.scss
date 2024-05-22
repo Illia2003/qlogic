@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: calc(100vh + 56px);
   position: relative;
   color: #fff;
 
@@ -35,7 +35,7 @@
     }
   }
 
-  .hero__video {
+  .hero__background {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -43,6 +43,10 @@
     right: 0;
 
     z-index: -1;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     video {
       display: block;
@@ -194,6 +198,10 @@
       flex: 1 1 auto;
 
       color: #fff;
+
+      .text-blue-color {
+        color: #348eff;
+      }
     }
   }
 }
@@ -203,6 +211,12 @@
     height: auto;
     .hero__lines {
       display: none;
+    }
+
+    .hero__background {
+      video {
+        display: none;
+      }
     }
 
     .hero__header {

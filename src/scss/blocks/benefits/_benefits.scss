@@ -6,7 +6,10 @@
 
   .benefits__fixed {
     width: calc(387 * (100vw / 960));
-    padding-top: calc(24 * (100vw / 960));
+
+    .sticky-element__content {
+      padding-top: calc(24 * (100vw / 960));
+    }
 
     .section__title {
       margin-bottom: calc(32 * (100vw / 960));

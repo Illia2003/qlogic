@@ -237,9 +237,16 @@
 
     <main>
       <section class="hero animation-parent">
-        <div class="hero__video">
+        <div
+          class="hero__background"
+          style="background-image: url(./images/hero-mobile-background.jpg)"
+        >
           <video muted loop autoplay playsinline>
-            <source src="./videos/videobg.mp4" type="video/mp4" />
+            <source
+              src="./videos/videobg.mp4"
+              type="video/mp4"
+              media="(min-width: 961px)"
+            />
           </video>
         </div>
         <div class="hero__lines">
@@ -484,7 +491,7 @@
                 </div>
                 <div class="statics__description">
                   <p class="text--regular">
-                    на місяць користуються нашою системою
+                    на місяць користуються нашими системами
                   </p>
                 </div>
               </div>
@@ -494,16 +501,19 @@
                   <p class="statics__name">центрів</p>
                 </div>
                 <div class="statics__description">
-                  <p class="text--regular">де впроваджено нашу систему</p>
+                  <p class="text--regular">де впроваджено наші системи</p>
                 </div>
               </div>
               <div class="statics__item flex flex--column">
                 <div class="statics__number">
                   <p class="statics__amount">3700+</p>
-                  <p class="statics__name">робочих місць</p>
+                  <p class="statics__name">
+                    робочих <br />
+                    місць
+                  </p>
                 </div>
                 <div class="statics__description">
-                  <p class="text--regular">було створено _________</p>
+                  <p class="text--regular">використовують наші системи</p>
                 </div>
               </div>
             </div>
@@ -1655,33 +1665,35 @@
         <div class="benefits__container container">
           <div class="benefits__wrapper wrapper flex justify--between">
             <div class="benefits__cta benefits__fixed sticky-element">
-              <p class="benefits__subtitle subtitle">
-                05 - <span class="subtitle__text">Переваги QLogic</span>
-              </p>
-              <h2 class="heading-2 text section__title">
-                Чому обирають саме <span class="text-blue-color">нас</span>?
-              </h2>
-              <button
-                type="button"
-                class="benefits__button btn btn--accent--big"
-              >
-                <div class="btn__content">
-                  Отримати
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="14"
-                    viewBox="0 0 15 14"
-                  >
-                    <path
-                      d="M1.13867 13.0007L13.1387 1.00073M13.1387 1.00073V8.8628M13.1387 1.00073H4.86281"
-                      stroke="#202F41"
-                      stroke-width="2"
-                    />
-                  </svg>
-                  консультацію
-                </div>
-              </button>
+              <div class="sticky-element__content">
+                <p class="benefits__subtitle subtitle">
+                  05 - <span class="subtitle__text">Переваги QLogic</span>
+                </p>
+                <h2 class="heading-2 text section__title">
+                  Чому обирають саме <span class="text-blue-color">нас</span>?
+                </h2>
+                <button
+                  type="button"
+                  class="benefits__button btn btn--accent--big"
+                >
+                  <div class="btn__content">
+                    Отримати
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                    >
+                      <path
+                        d="M1.13867 13.0007L13.1387 1.00073M13.1387 1.00073V8.8628M13.1387 1.00073H4.86281"
+                        stroke="#202F41"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    консультацію
+                  </div>
+                </button>
+              </div>
             </div>
 
             <div class="benefits__list sticky-no-element">
@@ -2032,11 +2044,6 @@
                   </li>
                   <li class="list__item">
                     <p>
-                      аналіз та налаштування системи під ваші бізнес-процеси.
-                    </p>
-                  </li>
-                  <li class="list__item">
-                    <p>
                       інтеграція QMotion Suite з вашим обладнанням та системами
                       автоматизованого маркетингу.
                     </p>
@@ -2363,7 +2370,7 @@
       </section>
     </main>
 
-    <footer class="footer animation-parent">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer__wrapper wrapper flex flex--column">
           <div class="footer__top flex align--center justify--between">

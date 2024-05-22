@@ -4,7 +4,7 @@ if ($(".tabs").length) {
   $(".tabs").each((i, tabsBlock) => {
     $(tabsBlock)
       .find(".tabs__tab")
-      .on("click", ({ currentTarget }) => {
+      .on("mouseenter", ({ currentTarget }) => {
         const tabEl = $(currentTarget);
 
         $(tabsBlock).find(".tabs__tab.active").removeClass("active");

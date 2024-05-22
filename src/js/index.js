@@ -1,5 +1,6 @@
 import "../videos/videobg.mp4";
 
+import "../images/hero-mobile-background.jpg";
 import "../images/logo--white.png";
 import "../images/about-us-image.jpg";
 import "../images/tab-1.jpg";

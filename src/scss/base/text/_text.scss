@@ -23,8 +23,12 @@
 
   text-transform: uppercase;
 
-  span {
+  > span {
     display: inline-block;
+
+    & + span {
+      margin-top: calc(6.5 * (100vw / 960));
+    }
 
     &:nth-of-type(2n) {
       padding-left: calc(73 * (100vw / 960));
@@ -157,7 +161,11 @@
 
     display: inline-block;
 
-    span {
+    > span {
+      & + span {
+        margin-top: 0;
+      }
+
       &:nth-of-type(2n) {
         padding-left: 0;
       }
