@@ -88,7 +88,7 @@ if (horizontalScrolling) {
       ease: "none",
       scrollTrigger: {
         trigger: horizontalScrolling,
-        start: `${28 + 44 * ((innerWidth - 375) / 585)}px top`,
+        start: `${72 + 112 * ((innerWidth - 375) / 585)}px top`,
         end: () => {
           const items = horizontalScrolling.querySelectorAll(
             ".horizontal-scrolling__item"
@@ -106,7 +106,6 @@ if (horizontalScrolling) {
         },
         scrub: true,
         pin: true,
-        markers: true,
         invalidateOnRefresh: true,
         anticipatePin: 1,
       },
@@ -116,7 +115,7 @@ if (horizontalScrolling) {
       width: "100%",
       scrollTrigger: {
         trigger: horizontalScrolling,
-        start: `${28 + 44 * ((innerWidth - 375) / 585)}px top`,
+        start: `${72 + 112 * ((innerWidth - 375) / 585)}px top`,
         end: () => {
           const items = horizontalScrolling.querySelectorAll(
             ".horizontal-scrolling__item"
