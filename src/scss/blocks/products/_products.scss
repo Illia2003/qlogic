@@ -26,9 +26,12 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
-    gap: calc(18 * (100vw / 960));
 
     margin-bottom: calc(33 * (100vw / 960));
+
+    .swiper-wrapper {
+      gap: calc(18 * (100vw / 960));
+    }
   }
 
   .horizontal-scrolling__progress-bar {
@@ -147,6 +150,10 @@
     .horizontal-scrolling__items {
       width: 100%;
       margin-bottom: calc(36px + 9 * ((100vw - 768px) / 192));
+
+      .swiper-wrapper {
+        gap: 0;
+      }
     }
 
     .horizontal-scrolling__progress-bar {
