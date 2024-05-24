@@ -181,64 +181,62 @@
 
 @media screen and (max-width: 960px) {
   .btn {
-    font-size: calc(13px + 20.28 * ((100vw - 375px) / 585));
+    font-size: calc(16px + 4 * ((100vw - 768px) / 192));
     line-height: 185%;
 
     &.btn--accent--big {
-      font-size: calc(15px + 7.5 * ((100vw - 375px) / 585));
+      font-size: calc(16px + 4 * ((100vw - 768px) / 192));
 
-      width: calc(180px + 90 * ((100vw - 375px) / 585));
-      height: calc(180px + 90 * ((100vw - 375px) / 585));
+      width: calc(180px + 45 * ((100vw - 768px) / 192));
+      height: calc(180px + 45 * ((100vw - 768px) / 192));
 
       .btn__content {
-        width: calc(97px + 48.5 * ((100vw - 375px) / 585));
+        width: calc(100px + 25 * ((100vw - 768px) / 192));
       }
 
       svg {
-        margin: 0px calc(6px + 3 * ((100vw - 375px) / 585));
+        margin: 0px calc(6px + 2 * ((100vw - 768px) / 192));
 
-        width: calc(9px + 4.5 * ((100vw - 375px) / 585));
-        height: calc(9px + 4.5 * ((100vw - 375px) / 585));
+        width: calc(9px + 2 * ((100vw - 768px) / 192));
+        height: calc(9px + 2 * ((100vw - 768px) / 192));
       }
     }
 
     &.btn--secondary,
     &.btn--main {
-      padding-top: calc(6px + 9.36 * ((100vw - 375px) / 585));
-      padding-bottom: calc(6px + 9.36 * ((100vw - 375px) / 585));
+      padding-top: calc(6px + 2 * ((100vw - 768px) / 192));
+      padding-bottom: calc(6px + 2 * ((100vw - 768px) / 192));
 
-      padding-right: calc(4px + 6.24 * ((100vw - 375px) / 585));
-      padding-left: calc(4px + 6.24 * ((100vw - 375px) / 585));
+      padding-right: calc(4px + 1 * ((100vw - 768px) / 192));
+      padding-left: calc(4px + 1 * ((100vw - 768px) / 192));
 
-      border-radius: calc(250px + 390 * ((100vw - 375px) / 585));
-
-      transition: all 0.3s linear;
+      border-radius: calc(250px + 63 * ((100vw - 768px) / 192));
 
       .btn__text {
-        padding: 0px calc(21px + 32.76 * ((100vw - 375px) / 585));
+        padding: 0px calc(21px + 5 * ((100vw - 768px) / 192));
       }
 
       .btn__icon {
-        width: calc(36px + 56.16 * ((100vw - 375px) / 585));
-        height: calc(36px + 56.16 * ((100vw - 375px) / 585));
+        width: calc(36px + 9 * ((100vw - 768px) / 192));
+        height: calc(36px + 9 * ((100vw - 768px) / 192));
 
         svg {
-          width: calc(14px + 21.84 * ((100vw - 375px) / 585));
-          height: calc(10px + 15.6 * ((100vw - 375px) / 585));
+          width: calc(14px + 4 * ((100vw - 768px) / 192));
+          height: calc(10px + 3 * ((100vw - 768px) / 192));
         }
       }
     }
 
     &.btn--icon {
-      padding-top: calc(6px + 9 * ((100vw - 375px) / 585));
-      padding-bottom: calc(6px + 9 * ((100vw - 375px) / 585));
-      padding-right: calc(24px + 37 * ((100vw - 375px) / 585));
-      padding-left: calc(24px + 37 * ((100vw - 375px) / 585));
+      padding-top: calc(6px + 2 * ((100vw - 768px) / 192));
+      padding-bottom: calc(6px + 2 * ((100vw - 768px) / 192));
+      padding-right: calc(24px + 6 * ((100vw - 768px) / 192));
+      padding-left: calc(24px + 6 * ((100vw - 768px) / 192));
 
-      border-radius: calc(250px + 390 * ((100vw - 375px) / 585));
+      border-radius: calc(250px + 63 * ((100vw - 768px) / 192));
 
       svg {
-        height: calc(18.38px + 28.7 * ((100vw - 375px) / 585));
+        height: calc(22px + 6 * ((100vw - 768px) / 192));
       }
     }
 
@@ -249,16 +247,16 @@
       align-items: flex-start;
       justify-content: flex-start;
 
-      gap: calc(12px + 19 * ((100vw - 375px) / 585));
+      gap: calc(12px + 3 * ((100vw - 768px) / 192));
 
-      padding-top: calc(12px + 19 * ((100vw - 375px) / 585));
-      padding-bottom: calc(12px + 19 * ((100vw - 375px) / 585));
-      padding-left: calc(16px + 25 * ((100vw - 375px) / 585));
-      padding-right: calc(24px + 37 * ((100vw - 375px) / 585));
+      padding-top: calc(12px + 3 * ((100vw - 768px) / 192));
+      padding-bottom: calc(12px + 3 * ((100vw - 768px) / 192));
+      padding-left: calc(16px + 4 * ((100vw - 768px) / 192));
+      padding-right: calc(24px + 6 * ((100vw - 768px) / 192));
 
-      border: calc(1px + 2 * ((100vw - 375px) / 585)) solid
+      border: calc(1px + 1 * ((100vw - 768px) / 192)) solid
         rgba($border-color, 0.5);
-      border-radius: 250px;
+      border-radius: calc(250px + 63 * ((100vw - 768px) / 192));
 
       svg {
         fill: $theme-color;
@@ -267,6 +265,81 @@
       .btn__text {
         color: $theme-color;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: calc(13px + 14 * ((100vw - 375px) / 392));
+
+    &.btn--accent--big {
+      font-size: calc(15px + 15.68 * ((100vw - 375px) / 392));
+
+      width: calc(180px + 188 * ((100vw - 375px) / 392));
+      height: calc(180px + 188 * ((100vw - 375px) / 392));
+
+      .btn__content {
+        width: calc(97px + 101 * ((100vw - 375px) / 392));
+      }
+
+      svg {
+        margin: 0px calc(6px + 6 * ((100vw - 375px) / 392));
+
+        width: calc(9px + 9 * ((100vw - 375px) / 392));
+        height: calc(9px + 9 * ((100vw - 375px) / 392));
+      }
+    }
+
+    &.btn--secondary,
+    &.btn--main {
+      padding-top: calc(6px + 6 * ((100vw - 375px) / 392));
+      padding-bottom: calc(6px + 6 * ((100vw - 375px) / 392));
+
+      padding-right: calc(4px + 4 * ((100vw - 375px) / 392));
+      padding-left: calc(4px + 4 * ((100vw - 375px) / 392));
+
+      border-radius: calc(250px + 261 * ((100vw - 375px) / 392));
+
+      .btn__text {
+        padding: 0px calc(21px + 22 * ((100vw - 375px) / 392));
+      }
+
+      .btn__icon {
+        width: calc(36px + 38 * ((100vw - 375px) / 392));
+        height: calc(36px + 38 * ((100vw - 375px) / 392));
+
+        svg {
+          width: calc(14px + 15 * ((100vw - 375px) / 392));
+          height: calc(10px + 11 * ((100vw - 375px) / 392));
+        }
+      }
+    }
+
+    &.btn--icon {
+      padding-top: calc(6px + 6 * ((100vw - 375px) / 392));
+      padding-bottom: calc(6px + 6 * ((100vw - 375px) / 392));
+      padding-right: calc(24px + 25 * ((100vw - 375px) / 392));
+      padding-left: calc(24px + 25 * ((100vw - 375px) / 392));
+
+      border-radius: calc(250px + 261 * ((100vw - 375px) / 392));
+
+      svg {
+        height: calc(18px + 19 * ((100vw - 375px) / 392));
+      }
+    }
+
+    &.btn--phone {
+      gap: calc(12px + 13 * ((100vw - 375px) / 392));
+
+      padding-top: calc(12px + 13 * ((100vw - 375px) / 392));
+      padding-bottom: calc(12px + 13 * ((100vw - 375px) / 392));
+      padding-left: calc(16px + 17 * ((100vw - 375px) / 392));
+      padding-right: calc(24px + 25 * ((100vw - 375px) / 392));
+
+      border: calc(1px + 2 * ((100vw - 375px) / 392)) solid
+        rgba($border-color, 0.5);
+      border-radius: calc(250px + 261 * ((100vw - 375px) / 392));
     }
   }
 }

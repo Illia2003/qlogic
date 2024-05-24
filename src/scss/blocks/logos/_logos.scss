@@ -75,8 +75,8 @@
 
   .logos {
     .logos__wrapper {
-      padding-top: calc(100px + 156 * ((100vw - 375px) / 585));
-      padding-bottom: calc(90px + 140 * ((100vw - 375px) / 585));
+      padding-top: calc(100px + 25 * ((100vw - 768px) / 192));
+      padding-bottom: calc(90px + 23 * ((100vw - 768px) / 192));
     }
 
     .logos__top {
@@ -84,7 +84,7 @@
       justify-content: flex-start;
       align-items: flex-start;
 
-      margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+      margin-bottom: calc(36px + 9 * ((100vw - 768px) / 192));
 
       .logos__title,
       .logos__description {
@@ -92,7 +92,7 @@
       }
 
       .logos__title {
-        margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+        margin-bottom: calc(16px + 4 * ((100vw - 768px) / 192));
       }
     }
 
@@ -101,11 +101,11 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
-      gap: calc(12px + 19 * ((100vw - 375px) / 585)) 0;
+      gap: calc(12px + 3 * ((100vw - 768px) / 192)) 0;
 
       .logos__item {
-        width: calc(160px + 250 * ((100vw - 375px) / 585));
-        height: calc(120px + 187 * ((100vw - 375px) / 585));
+        width: calc(328px + 80 * ((100vw - 768px) / 192));
+        height: calc(246px + 62 * ((100vw - 768px) / 192));
 
         border-width: calc(0.4px + 0.6 * ((100vw - 375px) / 585));
         border-radius: calc(10px + 16 * ((100vw - 375px) / 585));
@@ -126,6 +126,54 @@
           .logos__item-description {
             display: none;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  //calc(15px + 7.5 * ((100vw - 375px) / 585))
+
+  .logos {
+    .logos__wrapper {
+      padding-top: calc(100px + 105 * ((100vw - 375px) / 392));
+      padding-bottom: calc(90px + 94 * ((100vw - 375px) / 392));
+    }
+
+    .logos__top {
+      margin-bottom: calc(36px + 38 * ((100vw - 375px) / 392));
+
+      .logos__title,
+      .logos__description {
+        width: 100%;
+      }
+
+      .logos__title {
+        margin-bottom: calc(16px + 17 * ((100vw - 375px) / 392));
+      }
+    }
+
+    .logos__list {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      gap: calc(12px + 13 * ((100vw - 375px) / 392)) 0;
+
+      .logos__item {
+        width: calc(160px + 167 * ((100vw - 375px) / 392));
+        height: calc(120px + 125 * ((100vw - 375px) / 392));
+
+        border-width: calc(0.4px + 0.4 * ((100vw - 375px) / 392));
+        border-radius: calc(10px + 5 * ((100vw - 375px) / 392));
+
+        img {
+          margin-bottom: calc(6px + 6 * ((100vw - 375px) / 392));
+        }
+
+        .heading-6 {
+          font-size: calc(15px + 16 * ((100vw - 375px) / 392));
         }
       }
     }

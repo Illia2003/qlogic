@@ -102,15 +102,15 @@
 }
 
 @media screen and (max-width: 960px) {
-  //calc(15px + 7.5 * ((100vw - 375px) / 585))
+  //calc(15px + 7.5 * ((100vw - 768px) / 192))
 
   .about-us {
     .about-us__wrapper {
-      padding: calc(72px + 36 * ((100vw - 375px) / 585)) 0px;
+      padding: calc(72px + 18 * ((100vw - 768px) / 192)) 0px;
     }
 
     .about-us__title {
-      margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+      margin-bottom: calc(16px + 4 * ((100vw - 768px) / 192));
       flex-direction: column;
 
       .heading-2 {
@@ -136,13 +136,13 @@
 
       .about-us__image {
         width: 100%;
-        height: calc(215px + 335.4 * ((100vw - 375px) / 585));
+        height: calc(440px + 110 * ((100vw - 768px) / 192));
 
         order: 1;
 
         img {
           display: block;
-          border-radius: calc(10px + 16 * ((100vw - 375px) / 585));
+          border-radius: calc(10px + 3 * ((100vw - 768px) / 192));
 
           width: 100%;
           height: 100%;
@@ -157,9 +157,76 @@
         flex: 1 1 auto;
 
         order: 0;
-        margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+        margin-bottom: calc(36px + 9 * ((100vw - 768px) / 192));
 
-        gap: calc(16px + 25 * ((100vw - 375px) / 585));
+        gap: calc(16px + 4 * ((100vw - 768px) / 192));
+
+        p {
+          max-width: calc(560px + 140 * ((100vw - 768px) / 192));
+        }
+      }
+    }
+
+    .about-us__statics {
+      flex-direction: column;
+      margin-top: calc(36px + 9 * ((100vw - 768px) / 192));
+
+      gap: calc(24px + 6 * ((100vw - 768px) / 192));
+
+      .statics__item {
+        gap: calc(12px + 3 * ((100vw - 768px) / 192));
+
+        .statics__number {
+          display: flex;
+          align-items: flex-start;
+          gap: calc(4px + 2 * ((100vw - 768px) / 192));
+        }
+
+        .statics__name {
+          font-size: calc(18px + 5 * ((100vw - 768px) / 192));
+        }
+
+        .statics__amount {
+          font-size: calc(64px + 16 * ((100vw - 768px) / 192));
+        }
+
+        .statics__description {
+          padding: calc(6px + 2 * ((100vw - 768px) / 192)) 0;
+          border-top: 1px solid $border-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  //calc(15px + 7.5 * ((100vw - 375px) / 392))
+
+  .about-us {
+    .about-us__wrapper {
+      padding: calc(72px + 75 * ((100vw - 375px) / 392)) 0px;
+    }
+
+    .about-us__title {
+      margin-bottom: calc(16px + 17 * ((100vw - 375px) / 392));
+    }
+
+    .about-us__content {
+      .about-us__image {
+        width: 100%;
+        height: calc(215px + 225 * ((100vw - 375px) / 392));
+
+        order: 1;
+
+        img {
+          border-radius: calc(10px + 10 * ((100vw - 375px) / 392));
+        }
+      }
+
+      .about-us__text {
+        margin-bottom: calc(36px + 38 * ((100vw - 375px) / 392));
+
+        gap: calc(16px + 17 * ((100vw - 375px) / 392));
 
         p {
           max-width: 100%;
@@ -169,31 +236,27 @@
     }
 
     .about-us__statics {
-      flex-direction: column;
-      margin-top: calc(36px + 56 * ((100vw - 375px) / 585));
+      margin-top: calc(36px + 38 * ((100vw - 375px) / 392));
 
-      gap: calc(24px + 37.44 * ((100vw - 375px) / 585));
+      gap: calc(24px + 25 * ((100vw - 375px) / 392));
 
       .statics__item {
-        gap: calc(12px + 18.72 * ((100vw - 375px) / 585));
+        gap: calc(12px + 13 * ((100vw - 375px) / 392));
 
         .statics__number {
-          display: flex;
-          align-items: flex-start;
-          gap: calc(4 * (100vw / 960));
+          gap: calc(4px + 4 * ((100vw - 375px) / 392));
         }
 
         .statics__name {
-          font-size: calc(18px + 28 * ((100vw - 375px) / 585));
+          font-size: calc(18px + 19 * ((100vw - 375px) / 392));
         }
 
         .statics__amount {
-          font-size: calc(64px + 100 * ((100vw - 375px) / 585));
+          font-size: calc(64px + 67 * ((100vw - 375px) / 392));
         }
 
         .statics__description {
-          padding: calc(6px + 9.36 * ((100vw - 375px) / 585)) 0;
-          border-top: 1px solid $border-color;
+          padding: calc(6px + 6 * ((100vw - 375px) / 392)) 0;
         }
       }
     }

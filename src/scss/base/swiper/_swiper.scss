@@ -81,17 +81,17 @@ div.swiper {
 @media screen and (max-width: 960px) {
   div.swiper {
     .swiper-navigation {
-      gap: calc(6px + 9 * ((100vw - 375px) / 585));
+      gap: calc(6px + 2 * ((100vw - 768px) / 192));
     }
 
     .swiper-navigation-button {
-      width: calc(48px + 75 * ((100vw - 375px) / 585));
-      height: calc(48px + 75 * ((100vw - 375px) / 585));
+      width: calc(48px + 12 * ((100vw - 768px) / 192));
+      height: calc(48px + 12 * ((100vw - 768px) / 192));
       flex-shrink: 0;
 
       svg {
-        width: calc(11px + 17 * ((100vw - 375px) / 585));
-        height: calc(8px + 12 * ((100vw - 375px) / 585));
+        width: calc(11px + 3 * ((100vw - 768px) / 192));
+        height: calc(8px + 2 * ((100vw - 768px) / 192));
       }
     }
 
@@ -104,15 +104,48 @@ div.swiper {
       align-items: center;
       justify-content: center;
 
-      gap: calc(6px + 9 * ((100vw - 375px) / 585));
+      gap: calc(6px + 2 * ((100vw - 768px) / 192));
 
       .swiper-pagination-bullet {
-        width: calc(8px + 13 * ((100vw - 375px) / 585));
-        height: calc(8px + 13 * ((100vw - 375px) / 585));
+        width: calc(8px + 2 * ((100vw - 768px) / 192));
+        height: calc(8px + 2 * ((100vw - 768px) / 192));
 
         &.swiper-pagination-bullet-active {
-          width: calc(8px + 13 * ((100vw - 375px) / 585));
-          height: calc(8px + 13 * ((100vw - 375px) / 585));
+          width: calc(8px + 2 * ((100vw - 768px) / 192));
+          height: calc(8px + 2 * ((100vw - 768px) / 192));
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.swiper {
+    .swiper-navigation {
+      gap: calc(6px + 6 * ((100vw - 375px) / 392));
+    }
+
+    .swiper-navigation-button {
+      width: calc(48px + 50 * ((100vw - 375px) / 392));
+      height: calc(48px + 50 * ((100vw - 375px) / 392));
+      flex-shrink: 0;
+
+      svg {
+        width: calc(11px + 12 * ((100vw - 375px) / 392));
+        height: calc(8px + 8 * ((100vw - 375px) / 392));
+      }
+    }
+
+    .swiper-bullets {
+      gap: calc(6px + 6 * ((100vw - 375px) / 392));
+
+      .swiper-pagination-bullet {
+        width: calc(8px + 8 * ((100vw - 375px) / 392));
+        height: calc(8px + 8 * ((100vw - 375px) / 392));
+
+        &.swiper-pagination-bullet-active {
+          width: calc(8px + 8 * ((100vw - 375px) / 392));
+          height: calc(8px + 8 * ((100vw - 375px) / 392));
         }
       }
     }

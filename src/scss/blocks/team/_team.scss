@@ -69,11 +69,64 @@
 
   .team {
     .team__wrapper {
-      padding: calc(72px + 36 * ((100vw - 375px) / 585)) 0px;
+      padding: calc(72px + 18 * ((100vw - 768px) / 192)) 0px;
     }
 
     .team__top {
-      margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+      margin-bottom: calc(36px + 9 * ((100vw - 768px) / 192));
+
+      .section__title {
+        width: 100%;
+      }
+    }
+
+    .team__list {
+      flex-wrap: wrap;
+
+      gap: calc(24px + 6 * ((100vw - 768px) / 192));
+
+      .team__item {
+        width: calc(347.5px + 86.875 * ((100vw - 768px) / 192));
+        padding: calc(16px + 4 * ((100vw - 768px) / 192));
+
+        border-radius: calc(15px + 4 * ((100vw - 768px) / 192));
+
+        .team__image {
+          width: 100%;
+          height: calc(320px + 60 * ((100vw - 768px) / 192));
+
+          margin-bottom: calc(16px + 4 * ((100vw - 768px) / 192));
+
+          img {
+            object-fit: cover;
+            border-radius: calc(8px + 2 * ((100vw - 768px) / 192));
+          }
+        }
+
+        .team__content {
+          .heading-6 {
+            margin-bottom: calc(8px + 2 * ((100vw - 768px) / 192));
+          }
+
+          .team__description {
+            margin-bottom: calc(16px + 4 * ((100vw - 768px) / 192));
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  //calc(15px + 7.5 * ((100vw - 375px) / 585))
+
+  .team {
+    .team__wrapper {
+      padding: calc(72px + 75 * ((100vw - 375px) / 392)) 0px;
+    }
+
+    .team__top {
+      margin-bottom: calc(36px + 38 * ((100vw - 375px) / 392));
 
       .section__title {
         width: 100%;
@@ -84,34 +137,33 @@
       justify-content: flex-start;
       flex-direction: column;
 
-      gap: calc(24px + 37 * ((100vw - 375px) / 585));
+      gap: calc(24px + 25 * ((100vw - 375px) / 392));
 
       .team__item {
         width: 100%;
 
-        padding: calc(16px + 25 * ((100vw - 375px) / 585));
+        padding: calc(16px + 17 * ((100vw - 375px) / 392));
 
-        border-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+        border-radius: calc(15px + 16 * ((100vw - 375px) / 392));
 
         .team__image {
           width: 100%;
-          height: calc(205px + 320 * ((100vw - 375px) / 585));
+          height: calc(205px + 214 * ((100vw - 375px) / 392));
 
-          margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+          margin-bottom: calc(16px + 17 * ((100vw - 375px) / 392));
 
           img {
-            object-fit: cover;
-            border-radius: calc(8px + 12 * ((100vw - 375px) / 585));
+            border-radius: calc(8px + 8 * ((100vw - 375px) / 392));
           }
         }
 
         .team__content {
           .heading-6 {
-            margin-bottom: calc(8px + 12 * ((100vw - 375px) / 585));
+            margin-bottom: calc(8px + 8 * ((100vw - 375px) / 392));
           }
 
           .team__description {
-            margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+            margin-bottom: calc(16px + 17 * ((100vw - 375px) / 392));
           }
         }
       }

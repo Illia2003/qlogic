@@ -22,7 +22,7 @@ if (prelodaerCount) {
         var now = new Date().getTime() - start;
         var progress = now / duration;
         var result = Math.floor((to - from) * progress + from);
-        element.innerHTML = progress < 1 ? result : to;
+        element.innerHTML = progress < 1 ? result + "%" : to + "%";
         if (progress < 1) setTimeout(count, 10);
       }, 20);
     }
@@ -69,7 +69,7 @@ if (horizontalScrolling) {
       },
     });
 
-    gsap.to(".horizontal-scrolling__bar", {
+    gsap.to(".horizontal-scrolling__progress-bar .progress__bar", {
       width: "100%",
       scrollTrigger: {
         trigger: horizontalScrolling,
@@ -80,61 +80,61 @@ if (horizontalScrolling) {
     });
   });
 
-  horizontalScrollingMedia.add("(max-width: 959px)", () => {
-    gsap.to(".horizontal-scrolling__items", {
-      xPercent: -100,
-      x: () =>
-        document.body.clientWidth - (32 + 16 * ((innerWidth - 375) / 585)),
-      ease: "none",
-      scrollTrigger: {
-        trigger: horizontalScrolling,
-        start: `${72 + 112 * ((innerWidth - 375) / 585)}px top`,
-        end: () => {
-          const items = horizontalScrolling.querySelectorAll(
-            ".horizontal-scrolling__item"
-          );
+  // horizontalScrollingMedia.add("(max-width: 959px)", () => {
+  //   gsap.to(".horizontal-scrolling__items", {
+  //     xPercent: -100,
+  //     x: () =>
+  //       document.body.clientWidth - (32 + 16 * ((innerWidth - 375) / 585)),
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: horizontalScrolling,
+  //       start: `${72 + 112 * ((innerWidth - 375) / 585)}px top`,
+  //       end: () => {
+  //         const items = horizontalScrolling.querySelectorAll(
+  //           ".horizontal-scrolling__item"
+  //         );
 
-          let width = 0;
+  //         let width = 0;
 
-          items.forEach((item) => {
-            width += item.offsetWidth;
-          });
+  //         items.forEach((item) => {
+  //           width += item.offsetWidth;
+  //         });
 
-          width -= items[items.length - 1].offsetWidth;
+  //         width -= items[items.length - 1].offsetWidth;
 
-          return `+=${width}`;
-        },
-        scrub: true,
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-      },
-    });
+  //         return `+=${width}`;
+  //       },
+  //       scrub: true,
+  //       pin: true,
+  //       invalidateOnRefresh: true,
+  //       anticipatePin: 1,
+  //     },
+  //   });
 
-    gsap.to(".horizontal-scrolling__bar", {
-      width: "100%",
-      scrollTrigger: {
-        trigger: horizontalScrolling,
-        start: `${72 + 112 * ((innerWidth - 375) / 585)}px top`,
-        end: () => {
-          const items = horizontalScrolling.querySelectorAll(
-            ".horizontal-scrolling__item"
-          );
+  //   gsap.to(".horizontal-scrolling__bar", {
+  //     width: "100%",
+  //     scrollTrigger: {
+  //       trigger: horizontalScrolling,
+  //       start: `${72 + 112 * ((innerWidth - 375) / 585)}px top`,
+  //       end: () => {
+  //         const items = horizontalScrolling.querySelectorAll(
+  //           ".horizontal-scrolling__item"
+  //         );
 
-          let width = 0;
+  //         let width = 0;
 
-          items.forEach((item) => {
-            width += item.offsetWidth;
-          });
+  //         items.forEach((item) => {
+  //           width += item.offsetWidth;
+  //         });
 
-          width -= items[items.length - 1].offsetWidth;
+  //         width -= items[items.length - 1].offsetWidth;
 
-          return `+=${width}`;
-        },
-        scrub: true,
-      },
-    });
-  });
+  //         return `+=${width}`;
+  //       },
+  //       scrub: true,
+  //     },
+  //   });
+  // });
 }
 
 /* STICKY PART */

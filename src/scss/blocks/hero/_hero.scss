@@ -220,7 +220,7 @@
     }
 
     .hero__header {
-      padding: calc(16px + 8 * ((100vw - 375px) / 585)) 0px;
+      padding: calc(16px + 4 * ((100vw - 768px) / 192)) 0px;
 
       .header__navigation {
         display: none;
@@ -230,10 +230,14 @@
         display: flex;
         align-items: stretch;
 
-        gap: calc(8px + 13 * ((100vw - 375px) / 585));
+        gap: calc(8px + 2 * ((100vw - 768px) / 192));
 
         .btn__cta {
           display: none;
+        }
+
+        .btn {
+          height: calc(58px + 15 * ((100vw - 768px) / 192));
         }
       }
 
@@ -242,8 +246,8 @@
         align-items: center;
         justify-content: center;
 
-        width: calc(58px + 90 * ((100vw - 375px) / 585));
-        height: calc(58px + 90 * ((100vw - 375px) / 585));
+        width: calc(58px + 15 * ((100vw - 768px) / 192));
+        height: calc(58px + 15 * ((100vw - 768px) / 192));
         background-color: $theme-color;
         border: none;
         border-radius: 100%;
@@ -255,8 +259,8 @@
     }
 
     .hero__cta {
-      padding-top: calc(56px + 28 * ((100vw - 375px) / 585));
-      padding-bottom: calc(112px + 174 * ((100vw - 375px) / 585));
+      padding-top: calc(56px + 14 * ((100vw - 768px) / 192));
+      padding-bottom: calc(112px + 28 * ((100vw - 768px) / 192));
 
       display: flex;
       flex-direction: column;
@@ -265,14 +269,13 @@
 
       .cta__subtitle-niche {
         order: 0;
-        width: 100%;
+        width: calc(400px + 100 * ((100vw - 768px) / 192));
 
         .subtitle__text {
           background-image: none;
           padding: 0;
 
-          font-family: "Manrope", sans-serif;
-          font-size: calc(16px + 25 * ((100vw - 375px) / 585));
+          font-size: calc(18px + 5 * ((100vw - 768px) / 192));
           line-height: 133%;
 
           span {
@@ -281,15 +284,15 @@
         }
 
         .subtitle__niche-icon {
-          width: calc(42px + 66 * ((100vw - 375px) / 585));
-          height: calc(42px + 66 * ((100vw - 375px) / 585));
+          width: calc(42px + 11 * ((100vw - 768px) / 192));
+          height: calc(42px + 11 * ((100vw - 768px) / 192));
           flex-shrink: 0;
 
-          margin-right: calc(12px + 19 * ((100vw - 375px) / 585));
+          margin-right: calc(12px + 3 * ((100vw - 768px) / 192));
 
           svg {
-            width: calc(26px + 40 * ((100vw - 375px) / 585));
-            height: calc(26px + 40 * ((100vw - 375px) / 585));
+            width: calc(26px + 7 * ((100vw - 768px) / 192));
+            height: calc(26px + 7 * ((100vw - 768px) / 192));
           }
         }
       }
@@ -299,25 +302,86 @@
         flex-shrink: 0;
         order: 3;
 
-        font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+        font-size: calc(18px + 5 * ((100vw - 768px) / 192));
         line-height: 133%;
 
         p {
-          width: calc(285px + 445 * ((100vw - 375px) / 585));
+          width: calc(340px + 85 * ((100vw - 768px) / 192));
         }
       }
 
       .cta__content {
-        gap: calc(16px + 25 * ((100vw - 375px) / 585));
+        gap: calc(16px + 4 * ((100vw - 768px) / 192));
       }
 
       .cta__button {
-        margin-top: calc(8px + 12 * ((100vw - 375px) / 585));
+        margin-top: calc(8px + 2 * ((100vw - 768px) / 192));
         order: 3;
       }
 
       .cta__title {
         order: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    .hero__header {
+      padding: calc(16px + 17 * ((100vw - 375px) / 392)) 0px;
+
+      .header__actions {
+        gap: calc(8px + 8 * ((100vw - 375px) / 392));
+
+        .btn {
+          height: calc(58px + 61 * ((100vw - 375px) / 392));
+        }
+      }
+
+      .header__burger-btn {
+        width: calc(58px + 61 * ((100vw - 375px) / 392));
+        height: calc(58px + 61 * ((100vw - 375px) / 392));
+      }
+    }
+
+    .hero__cta {
+      padding-top: calc(56px + 58 * ((100vw - 375px) / 392));
+      padding-bottom: calc(112px + 117 * ((100vw - 375px) / 392));
+
+      .cta__subtitle-niche {
+        width: 100%;
+        .subtitle__text {
+          font-size: calc(16px + 17 * ((100vw - 375px) / 392));
+        }
+
+        .subtitle__niche-icon {
+          width: calc(42px + 44 * ((100vw - 375px) / 392));
+          height: calc(42px + 44 * ((100vw - 375px) / 392));
+
+          margin-right: calc(12px + 13 * ((100vw - 375px) / 392));
+
+          svg {
+            width: calc(26px + 27 * ((100vw - 375px) / 392));
+            height: calc(26px + 27 * ((100vw - 375px) / 392));
+          }
+        }
+      }
+
+      .cta__subtitle-description {
+        font-size: calc(15px + 16 * ((100vw - 375px) / 392));
+
+        p {
+          width: calc(285px + 298 * ((100vw - 375px) / 392));
+        }
+      }
+
+      .cta__content {
+        gap: calc(16px + 17 * ((100vw - 375px) / 392));
+      }
+
+      .cta__button {
+        margin-top: calc(8px + 8 * ((100vw - 375px) / 392));
       }
     }
   }

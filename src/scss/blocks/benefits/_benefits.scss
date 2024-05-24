@@ -72,19 +72,19 @@
 @media screen and (max-width: 960px) {
   .benefits {
     .benefits__wrapper {
-      padding-top: calc(72px + 36 * ((100vw - 375px) / 585));
-      padding-bottom: calc(72px + 36 * ((100vw - 375px) / 585));
+      padding-top: calc(72px + 18 * ((100vw - 768px) / 192));
+      padding-bottom: calc(72px + 18 * ((100vw - 768px) / 192));
 
       flex-direction: column;
     }
 
     .benefits__fixed {
       width: 100%;
-      margin-bottom: calc(36px + 56 * ((100vw - 375px) / 585));
+      margin-bottom: calc(36px + 9 * ((100vw - 768px) / 192));
       padding-top: 0;
 
       .section__title {
-        margin-bottom: calc(16px + 25 * ((100vw - 375px) / 585));
+        margin-bottom: calc(16px + 4 * ((100vw - 768px) / 192));
       }
     }
 
@@ -96,19 +96,68 @@
       flex-direction: column;
 
       & + .benefits__item {
-        margin-top: calc(24px + 37 * ((100vw - 375px) / 585));
+        margin-top: calc(24px + 6 * ((100vw - 768px) / 192));
       }
 
       .benefits__icon {
-        width: calc(90px + 140 * ((100vw - 375px) / 585));
-        height: calc(90px + 140 * ((100vw - 375px) / 585));
+        width: calc(90px + 23 * ((100vw - 768px) / 192));
+        height: calc(90px + 23 * ((100vw - 768px) / 192));
 
         margin-right: 0;
-        margin-bottom: calc(8px + 12 * ((100vw - 375px) / 585));
+        margin-bottom: calc(8px + 2 * ((100vw - 768px) / 192));
 
         lord-icon {
-          width: calc(48px + 75 * ((100vw - 375px) / 585));
-          height: calc(48px + 75 * ((100vw - 375px) / 585));
+          width: calc(48px + 12 * ((100vw - 768px) / 192));
+          height: calc(48px + 12 * ((100vw - 768px) / 192));
+        }
+      }
+
+      .benefits__text {
+        width: calc(406px + 102 * ((100vw - 768px) / 192));
+
+        .benefits__name {
+          margin-bottom: calc(6px + 2 * ((100vw - 768px) / 192));
+        }
+
+        .benefits__description {
+          font-size: calc(15px + 4 * ((100vw - 768px) / 192));
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits {
+    .benefits__wrapper {
+      padding-top: calc(72px + 75 * ((100vw - 375px) / 392));
+      padding-bottom: calc(72px + 75 * ((100vw - 375px) / 392));
+
+      flex-direction: column;
+    }
+
+    .benefits__fixed {
+      margin-bottom: calc(36px + 38 * ((100vw - 375px) / 392));
+
+      .section__title {
+        margin-bottom: calc(16px + 17 * ((100vw - 375px) / 392));
+      }
+    }
+
+    .benefits__item {
+      & + .benefits__item {
+        margin-top: calc(24px + 25 * ((100vw - 375px) / 392));
+      }
+
+      .benefits__icon {
+        width: calc(90px + 94 * ((100vw - 375px) / 392));
+        height: calc(90px + 94 * ((100vw - 375px) / 392));
+
+        margin-bottom: calc(8px + 8 * ((100vw - 375px) / 392));
+
+        lord-icon {
+          width: calc(48px + 50 * ((100vw - 375px) / 392));
+          height: calc(48px + 50 * ((100vw - 375px) / 392));
         }
       }
 
@@ -116,11 +165,11 @@
         width: 100%;
 
         .benefits__name {
-          margin-bottom: calc(6px + 9 * ((100vw - 375px) / 585));
+          margin-bottom: calc(6px + 6 * ((100vw - 375px) / 392));
         }
 
         .benefits__description {
-          font-size: calc(15px + 23 * ((100vw - 375px) / 585));
+          font-size: calc(15px + 22 * ((100vw - 375px) / 392));
         }
       }
     }

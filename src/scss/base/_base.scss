@@ -25,7 +25,13 @@ body {
 
 @media screen and (max-width: 960px) {
   body {
-    font-size: calc(15px + 23.4 * ((100vw - 375px) / 585));
+    font-size: calc(16px + 4 * ((100vw - 768px) / 192));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: calc(15px + 16 * ((100vw - 375px) / 392));
   }
 }
 
@@ -38,8 +44,15 @@ body {
 
 @media screen and (max-width: 960px) {
   .container {
-    padding-left: calc(16px + 8 * ((100vw - 375px) / 585));
-    padding-right: calc(16px + 8 * ((100vw - 375px) / 585));
+    padding-left: calc(16px + 4 * ((100vw - 768px) / 192));
+    padding-right: calc(16px + 4 * ((100vw - 768px) / 192));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: calc(16px + 17 * ((100vw - 375px) / 392));
+    padding-right: calc(16px + 17 * ((100vw - 375px) / 392));
   }
 }
 
@@ -108,32 +121,45 @@ section {
 @media screen and (max-width: 960px) {
   section {
     &.section--rounded {
-      border-radius: calc(15px + 23 * ((100vw - 375px) / 585));
-      position: relative;
-      z-index: 100;
-
-      & + & {
-        z-index: 90;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
+      border-radius: calc(15px + 4 * ((100vw - 768px) / 192));
     }
 
     &.section--white {
-      background-color: $light-background-color;
-
       & + section.section--white {
-        padding-top: calc(56px + 87 * ((100vw - 375px) / 585));
+        padding-top: calc(56px + 14 * ((100vw - 768px) / 192));
       }
     }
 
     & + section {
-      margin-top: calc(-28px - 44 * ((100vw - 375px) / 585));
+      margin-top: calc(-28px - 7 * ((100vw - 768px) / 192));
     }
 
     &.section--rounded + &.section--no-rounded {
-      padding-top: calc(56px + 87 * ((100vw - 375px) / 585));
-      margin-bottom: calc(-56px - 87 * ((100vw - 375px) / 585));
+      padding-top: calc(56px + 14 * ((100vw - 768px) / 192));
+      margin-bottom: calc(-56px - 14 * ((100vw - 768px) / 192));
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    &.section--rounded {
+      border-radius: calc(15px + 16 * ((100vw - 375px) / 392));
+    }
+
+    &.section--white {
+      & + section.section--white {
+        padding-top: calc(56px + 59 * ((100vw - 375px) / 392));
+      }
+    }
+
+    & + section {
+      margin-top: calc(-28px - 44 * ((100vw - 375px) / 392));
+    }
+
+    &.section--rounded + &.section--no-rounded {
+      padding-top: calc(56px + 59 * ((100vw - 375px) / 392));
+      margin-bottom: calc(-56px - 59 * ((100vw - 375px) / 392));
     }
   }
 }

@@ -14,7 +14,7 @@
 
       width: 100%;
 
-      padding: calc(16px + 25 * ((100vw - 375px) / 585));
+      padding: calc(16px + 4 * ((100vw - 768px) / 392));
 
       color: rgba($color: #fff, $alpha: 0.6);
       transition: all 0.3s linear;
@@ -27,22 +27,22 @@
     }
 
     .accordion__icon {
-      border: calc(1px + 2 * ((100vw - 375px) / 585)) solid
+      border: calc(1px + 2 * ((100vw - 768px) / 392)) solid
         rgba($color: #fff, $alpha: 0.6);
       flex-shrink: 0;
 
-      width: calc(32px + 50 * ((100vw - 375px) / 585));
-      height: calc(32px + 50 * ((100vw - 375px) / 585));
+      width: calc(32px + 8 * ((100vw - 768px) / 392));
+      height: calc(32px + 8 * ((100vw - 768px) / 392));
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      border-radius: calc(5px + 8 * ((100vw - 375px) / 585));
+      border-radius: calc(5px + 1 * ((100vw - 768px) / 392));
 
       svg {
-        width: calc(18px + 28 * ((100vw - 375px) / 585));
-        height: calc(18px + 28 * ((100vw - 375px) / 585));
+        width: calc(18px + 5 * ((100vw - 768px) / 392));
+        height: calc(18px + 5 * ((100vw - 768px) / 392));
         stroke: rgba($color: #fff, $alpha: 0.6);
 
         path {
@@ -54,11 +54,11 @@
     }
 
     .accordion__item {
-      border-top: calc(1px + 2 * ((100vw - 375px) / 585)) solid #a6acb3;
-      border-bottom: calc(1px + 2 * ((100vw - 375px) / 585)) solid #a6acb3;
+      border-top: calc(1px + 2 * ((100vw - 768px) / 392)) solid #a6acb3;
+      border-bottom: calc(1px + 2 * ((100vw - 768px) / 392)) solid #a6acb3;
 
       & + .accordion__item {
-        margin-top: calc(-1px - 2 * ((100vw - 375px) / 585));
+        margin-top: calc(-1px - 2 * ((100vw - 768px) / 392));
       }
 
       &.active,
@@ -91,8 +91,8 @@
           border-top-color: transparent;
 
           .accordion__top {
-            border-top-left-radius: calc(15px + 23 * ((100vw - 375px) / 585));
-            border-top-right-radius: calc(15px + 23 * ((100vw - 375px) / 585));
+            border-top-left-radius: calc(15px + 4 * ((100vw - 768px) / 392));
+            border-top-right-radius: calc(15px + 4 * ((100vw - 768px) / 392));
           }
         }
       }
@@ -102,6 +102,49 @@
 
         .accordion__content {
           display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accordion {
+    .accordion__top {
+      padding: calc(16px + 17 * ((100vw - 375px) / 392));
+    }
+
+    .accordion__icon {
+      border: calc(1px + 2 * ((100vw - 375px) / 392)) solid
+        rgba($color: #fff, $alpha: 0.6);
+
+      width: calc(32px + 34 * ((100vw - 375px) / 392));
+      height: calc(32px + 34 * ((100vw - 375px) / 392));
+
+      border-radius: calc(5px + 2 * ((100vw - 375px) / 392));
+
+      svg {
+        width: calc(18px + 19 * ((100vw - 375px) / 392));
+        height: calc(18px + 19 * ((100vw - 375px) / 392));
+      }
+    }
+
+    .accordion__item {
+      border-top: calc(1px + 2 * ((100vw - 375px) / 392)) solid #a6acb3;
+      border-bottom: calc(1px + 2 * ((100vw - 375px) / 392)) solid #a6acb3;
+
+      & + .accordion__item {
+        margin-top: calc(-1px - 2 * ((100vw - 375px) / 392));
+      }
+
+      &:first-of-type {
+        &.active,
+        &:hover,
+        &:focus {
+          .accordion__top {
+            border-top-left-radius: calc(15px + 16 * ((100vw - 375px) / 392));
+            border-top-right-radius: calc(15px + 16 * ((100vw - 375px) / 392));
+          }
         }
       }
     }

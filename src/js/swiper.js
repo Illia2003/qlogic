@@ -20,6 +20,35 @@ if ($(".projects").length) {
   });
 }
 
+if (innerWidth <= 959) {
+  if ($(".horizontal-scrolling").length) {
+    let horizontalScrollingReviews = new Swiper(
+      ".horizontal-scrolling .horizontal-scrolling__items",
+      {
+        modules: [Pagination],
+        slidesPerView: 1,
+        spaceBetween: 10 + 15.6 * ((innerWidth - 375) / 585),
+        slideClass: "horizontal-scrolling__item",
+        allowTouchMove: true,
+
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+        },
+
+        pagination: {
+          el: ".horizontal-scrolling .horizontal-scrolling__progress-bar",
+          type: "progressbar",
+        },
+      }
+    );
+  }
+}
+
 if ($(".reviews").length) {
   let swiperReviews = new Swiper(".reviews .swiper", {
     modules: [Navigation, Pagination, EffectFade],
